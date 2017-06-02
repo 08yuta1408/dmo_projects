@@ -228,12 +228,66 @@ $(function(){
   eatCost_mans = [[ '0-1000円以下', eatCost_man[1] ], [ '1001~2000円以下', eatCost_man[2] ], [ '2001~3000円以下', eatCost_man[3] ], [ '3001~5000円以下', eatCost_man[4] ], [ '5001円以上', eatCost_man[5] ]];
   eatCost_womans = [[ '0-1000円以下', eatCost_woman[1] ], [ '1001~2000円以下', eatCost_woman[2] ], [ '2001~3000円以下', eatCost_woman[3] ], [ '3001~5000円以下', eatCost_woman[4] ], [ '5001円以上', eatCost_woman[5] ]];
 
-  for(i = 0; i <= 5; i++){
-    console.log("飲食費(男性)" + eatCost_man[i] + "人");
-  }
-  for(i = 0; i <= 5; i++){
-    console.log("飲食費(女性)" + eatCost_woman[i] + "人");
-  }
 
-  console.log(eatCost_man[1]);
+  jQuery.jqplot(
+      'february_eatcost',
+      [
+          eatCost_mans, eatCost_womans
+      ],
+      {
+          animate: true,
+
+          seriesDefaults: {
+              renderer: jQuery . jqplot . BarRenderer,
+
+              pointLabels: {
+                   show: true,
+                   location: 'n',
+                   ypadding: -3,
+                   escapeHTML: false,
+                   formatString: '<b style="color: blue;">%d</b>'
+               }
+          },
+          series: [
+             { label: '男' },
+             { label: '女' },
+
+          ],
+          legend: {
+                show: true,
+                placement: 'outsideGrid',
+                location: 'e',
+                renderer: jQuery . jqplot . EnhancedLegendRenderer,
+                rendererOptions: {
+                    numberColumns: 3
+                }
+            },
+
+
+          seriesColors:[ '#00BFFF', '#FFB6C1' ],
+
+          axes: {
+              xaxis: {
+                  renderer: jQuery . jqplot . CategoryAxisRenderer,
+
+              },
+              // 縦軸(y軸)
+              yaxis:{
+                  label: '人数(人)',
+                  min: 0,
+                  max: 50,
+                  tickInterval: 10,
+              }
+          },
+          title: {
+                text: '2月の男女別飲食費の比較',
+                show: true,
+                fontFamily: 'ＭＳ ゴシック',
+                fontSize: '20px',
+                textAlign: 'center',
+                textColor: 'black',
+                location: 's',
+            }
+      }
+  );
 });
