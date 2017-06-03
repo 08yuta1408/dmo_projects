@@ -435,4 +435,132 @@ $(function(){
             }
       }
   );
+
+  jQuery.jqplot(
+      'feb_eatcost_50and60',
+      [
+          eatCost_50year, eatCost_60year
+      ],
+      {
+          animate: true,
+
+          seriesDefaults: {
+              renderer: jQuery . jqplot . BarRenderer,
+
+              pointLabels: {
+                   show: true,
+                   location: 'n',
+                   ypadding: -3,
+                   escapeHTML: false,
+                   formatString: '<b style="color: blue;">%d</b>'
+               }
+          },
+          series: [
+            //  { label: '20歳未満' },
+            //  { label: '20代' },
+             { label: '50代'},
+             { label: '60代'},
+
+          ],
+          legend: {
+                show: true,
+                placement: 'outsideGrid',
+                location: 'e',
+                renderer: jQuery . jqplot . EnhancedLegendRenderer,
+                rendererOptions: {
+                    numberColumns: 3
+                }
+            },
+
+
+          seriesColors:[ '#FF0000', '#FFA500'],
+
+          axes: {
+              xaxis: {
+                  renderer: jQuery . jqplot . CategoryAxisRenderer,
+
+              },
+              // 縦軸(y軸)
+              yaxis:{
+                  label: '人数(人)',
+                  min: 0,
+                  max: 50,
+                  tickInterval: 10,
+              }
+          },
+          title: {
+                text: '2月の飲食費の比較(50代と60代)',
+                show: true,
+                fontFamily: 'ＭＳ ゴシック',
+                fontSize: '20px',
+                textAlign: 'center',
+                textColor: 'black',
+                location: 's',
+            }
+      }
+  );
+
+  jQuery.jqplot(
+      'feb_eatcost_70and80',
+      [
+          eatCost_70year, eatCost_80year
+      ],
+      {
+          animate: true,
+
+          seriesDefaults: {
+              renderer: jQuery . jqplot . BarRenderer,
+
+              pointLabels: {
+                   show: true,
+                   location: 'n',
+                   ypadding: -3,
+                   escapeHTML: false,
+                   formatString: '<b style="color: blue;">%d</b>'
+               }
+          },
+          series: [
+            //  { label: '20歳未満' },
+            //  { label: '20代' },
+             { label: '70代'},
+             { label: '80代以上'},
+
+          ],
+          legend: {
+                show: true,
+                placement: 'outsideGrid',
+                location: 'e',
+                renderer: jQuery . jqplot . EnhancedLegendRenderer,
+                rendererOptions: {
+                    numberColumns: 3
+                }
+            },
+
+
+          seriesColors:[ '#FF0000', '#FFA500'],
+
+          axes: {
+              xaxis: {
+                  renderer: jQuery . jqplot . CategoryAxisRenderer,
+
+              },
+              // 縦軸(y軸)
+              yaxis:{
+                  label: '人数(人)',
+                  min: 0,
+                  max: 50,
+                  tickInterval: 10,
+              }
+          },
+          title: {
+                text: '2月の飲食費の比較(70代と80代以上)',
+                show: true,
+                fontFamily: 'ＭＳ ゴシック',
+                fontSize: '20px',
+                textAlign: 'center',
+                textColor: 'black',
+                location: 's',
+            }
+      }
+  );
 });
