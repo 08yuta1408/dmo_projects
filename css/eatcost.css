@@ -7,8 +7,8 @@ a{
 }
 
 .container{
-  padding:0px 20px
-  width:1170px
+  /*padding:0px 20px;*/
+  width:1170px;
   margin:0px auto;
 }
 
@@ -90,4 +90,29 @@ footer{
 
 .footer-right{
   float:right;
+}
+
+.gragh-wrapper{
+  height:3000px;
+}
+
+.gragh{
+  float:left;
+  padding-top:30px;
+}
+
+
+.gragh-feb-eat{
+  float:left;
+  /*padding:50px 10px;*/
+}
+
+.gragh-march-eat{
+  float:left;
+  /*padding:50px 10px;*/
+}
+
+.gragh-feb-10s{
+  float: left;
+  /*padding: 50px 10px;*/
 }
