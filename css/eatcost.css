@@ -97,7 +97,6 @@ footer{
 }
 
 .gragh{
-  float:left;
   padding-top:30px;
 }
 
@@ -115,4 +114,16 @@ footer{
 .gragh-feb-10s{
   float: left;
   /*padding: 50px 10px;*/
+}
+
+.gragh-marth-10s{
+  float:left;
+}
+
+.gragh-feb-30s{
+  float:left;
+}
+
+.gragh-marth-30s{
+  float:left;
 }
