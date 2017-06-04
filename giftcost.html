@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/eatcost.css">
+    <link rel="stylesheet" href="css/giftcost.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
@@ -16,7 +16,7 @@
     <script class="include" language="javascript" type="text/javascript" src="js/plugins/jqplot.pieRenderer.js"></script>
 
 
-    <title>宿泊費グラフ</title>
+    <title>お土産費グラフ</title>
   </head>
   <body>
     <header>
@@ -38,24 +38,53 @@
     <div class="gragh-wrapper">
       <div class="container">
         <div class="gragh-content">
-          <div class="gragh-feb-stay">
-
+          <div class="gragh-feb-eat gragh">
+            <div id="february_giftCost" style="width:570px; height:400px;"></div>
           </div>
 
-          <div class="gragh-march-stay">
-
+          <div class="gragh-march-eat gragh">
+            <div id="march_giftCost" style="width:570px; height:400px;"></div>
           </div>
 
-          
+          <div class="gragh-feb-10s gragh">
+            <div id="feb_giftCost_10and20" style="width:570px; height:400px;"></div>
+          </div>
+
+          <div class="gragh-marth-10s gragh">
+            <div id="march_giftCost_10and20" style="width:570px; height:400px;"></div>
+          </div>
+
+          <div class="gragh-feb-30s gragh">
+            <div id="feb_giftCost_30and40" style="width:570px; height:400px;"></div>
+          </div>
+
+          <div class="gragh-marth-30s gragh">
+            <div id="march_giftCost_30and40" style="width:570px; height:400px;"></div>
+          </div>
+
+          <div class="gragh-feb-50s gragh">
+            <div id="feb_giftCost_50and60" style="width:570px; height:400px;"></div>
+          </div>
+
+          <div class="gragh-marth-50s gragh">
+            <div id="march_giftCost_50and60" style="width:570px; height:400px;"></div>
+          </div>
+
+          <div class="gragh-feb-70s gragh">
+            <div id="feb_giftCost_70and80" style="width:570px; height:400px;"></div>
+          </div>
+
+          <div class="gragh-marth-70s gragh">
+            <div id="march_giftCost_70and80" style="width:570px; height:400px;"></div>
+          </div>
 
         </div>
-
       </div>
+
     </div>
 
-
-    <script src = "staycost_feb.js"></script>
-    <script src = "staycost_march.js"></script>
+    <script src = "giftcost_feb.js"></script>
+    <script src = "giftcost_march.js"></script>
 
     <footer>
       <div class="footer-left">
