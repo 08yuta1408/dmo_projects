@@ -383,7 +383,7 @@ $(function(){
               yaxis:{
                   label: '人数(人)',
                   min: 0,
-                  max: 50,
+                  max: 60,
                   tickInterval: 10,
               }
           },
@@ -447,7 +447,7 @@ $(function(){
               yaxis:{
                   label: '人数(人)',
                   min: 0,
-                  max: 50,
+                  max: 30,
                   tickInterval: 10,
               }
           },
@@ -511,7 +511,7 @@ $(function(){
               yaxis:{
                   label: '人数(人)',
                   min: 0,
-                  max: 50,
+                  max: 30,
                   tickInterval: 10,
               }
           },
@@ -575,7 +575,7 @@ $(function(){
               yaxis:{
                   label: '人数(人)',
                   min: 0,
-                  max: 50,
+                  max: 30,
                   tickInterval: 10,
               }
           },
@@ -639,7 +639,7 @@ $(function(){
               yaxis:{
                   label: '人数(人)',
                   min: 0,
-                  max: 50,
+                  max: 30,
                   tickInterval: 10,
               }
           },
