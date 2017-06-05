@@ -43,6 +43,7 @@ header{
   display: block;
   color:white;
   line-height: 25px;
+
 }
 
 .message-wrapper{
@@ -58,7 +59,7 @@ header{
 
 .main-wrapper{
   text-align: center;
-  height: 500px;
+  height: 300px;
 }
 
 .content{
@@ -78,6 +79,17 @@ footer{
 .footer-left{
   float:left;
 
+}
+
+.main-wrapper{
+  margin-bottom:100px;
+  /*margin-left: 300px;*/
+  /*margin-right: 300px;*/
+  border:2px solid black;
+}
+
+.content a{
+  /*background-color: yellow;*/
 }
 
 .footer-right h2{
