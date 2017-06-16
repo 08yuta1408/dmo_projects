@@ -100,3 +100,12 @@ footer{
   padding-top:30px;
   float:left;
 }
+
+.gragh-content{
+  width: 90%;
+}
+
+.select-form{
+  text-align: center;
+  padding-top: 80px;
+}

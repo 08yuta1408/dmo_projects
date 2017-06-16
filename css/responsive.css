@@ -1,0 +1,9 @@
+@media (min-width: 1920px) {
+  .main-wrapper{
+    margin-bottom:100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border:2px solid black;
+  }
+
+}
