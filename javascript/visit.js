@@ -77,6 +77,7 @@ $(function(){
 
     if(gragh_character == "2"){
       $('#visit_gragh_feb').show();
+
       jQuery.jqplot(
           'visit_gragh_feb',
           [
