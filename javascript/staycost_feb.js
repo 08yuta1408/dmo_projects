@@ -11,7 +11,7 @@ var stayCost_70 = [0, 0, 0, 0, 0, 0, 0, 0, 0];      //70代：左から順に、
 var stayCost_80 = [0, 0, 0, 0, 0, 0, 0, 0, 0];      //80代：左から順に、無し・10000円以下・10001~20000円・20001~30000円・30001~40000円・40001円以上
 
 $(function(){
-  $.ajax({url: 'data_february.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/data_february.json', dataType: 'json', async: false}).done(function(data){
 
     for(var i = 0; i < data.length; i++){
       //男性の宿泊費

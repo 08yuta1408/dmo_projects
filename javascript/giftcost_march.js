@@ -11,7 +11,7 @@ var giftCost_70_2 = [0, 0, 0, 0, 0, 0];      //70代：左から順に、無し�
 var giftCost_80_2 = [0, 0, 0, 0, 0, 0];      //80代：左から順に、無し・1000円・1001~2000円・2001~3000円・3001~5000円・5000円以上
 
 $(function(){
-  $.ajax({url: 'data_march.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/data_march.json', dataType: 'json', async: false}).done(function(data){
 
     for(var i = 0; i < data.length; i++){
       //男性の宿泊費
