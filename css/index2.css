@@ -1,0 +1,94 @@
+*{
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+
+}
+
+li{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container{
+  /*margin:0 auto;*/
+  text-align: center;
+}
+
+header{
+  /*color: white;*/
+  height:100px;
+  background-color: #BCF5A9;
+}
+
+.header-left{
+  float:left;
+  padding: 10px 40px 10px 40px;
+  /*background-color: red;*/
+}
+
+.header-right{
+  color: white;
+  float:right;
+  /*background-color: red;*/
+}
+
+.header-right li{
+  float:left;
+  /*line-height: 60px;*/
+  padding:20px 40px 20px 40px;
+  /*background-color: blue;*/
+}
+
+.header-right a{
+  /*display: inline-block;*/
+  color: black;
+}
+
+.main{
+  padding-top: 50px;
+  height: 600px;
+  /*background-color: red;*/
+}
+
+
+/*----sex.html-----*/
+#sex_sousu{
+  margin-left: 30px;
+  /*background-color: red;*/
+  float: left;
+}
+
+#sex_month{
+  margin-left: 30px;
+  /*background-color: red;*/
+  float: left;
+}
+
+/*----sex.html END----*/
+
+.btn-wrapper{
+  float:right;
+  /*background-color: red;*/
+}
+
+.btn{
+  color: white;
+  margin: 80px;
+}
+
+.square_btn{
+  border-radius: 4px;
+  display: block;
+  padding: 10px 20px 10px 20px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 4px #1a7940;
+}
+
+.square_btn:active {/*ボタンを押したとき*/
+  box-shadow:none;
+  position:relative;
+  top:4px;
+}
