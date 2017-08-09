@@ -68,6 +68,23 @@ header{
 
 /*----sex.html END----*/
 
+/*----age.html----*/
+#age_sousu{
+  margin-left: 30px;
+}
+
+#age_month{
+  margin-left: 30px;
+}
+/*---age.html end*/
+
+
+/*----グラフ共通部分*/
+.gragh{
+  float: left;
+}
+
+/*----ボタン共通部分----*/
 .btn-wrapper{
   float:right;
   /*background-color: red;*/
@@ -92,3 +109,4 @@ header{
   position:relative;
   top:4px;
 }
+/*----ボタン END----*/
