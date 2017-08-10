@@ -98,14 +98,6 @@ $(function(){
       $('#age_sousu').show();
     });
 
-
-    //月別用
-    // age_Feb = [ [age_feb[0], 1], [age_feb[1], 2], [age_feb[2], 3], [age_feb[3], 4], [age_feb[4], 5], [age_feb[5], 6], [age_feb[6], 7], [age_feb[7], 8] ];
-    // age_March = [ [age_march[0], 1], [age_march[1], 2], [age_march[2], 3], [age_march[3], 4], [age_march[4], 5], [age_march[5], 6], [age_march[6], 7], [age_march[7], 8] ];
-    // age_April = [ [age_april[0], 1], [age_april[1], 2], [age_april[2], 3], [age_april[3], 4], [age_april[4], 5], [age_april[5], 6], [age_april[6], 7], [age_april[7], 8] ];
-    // age_May = [ [age_may[0], 1], [age_may[1], 2], [age_may[2], 3], [age_may[3], 4], [age_may[4], 5], [age_may[5], 6], [age_may[6], 7], [age_may[7], 8] ];
-    // age_June = [ [age_june[0], 1], [age_june[1], 2], [age_june[2], 3], [age_june[3], 4], [age_june[4], 5], [age_june[5], 6], [age_june[6], 7], [age_june[7], 8] ];
-
     age_10 = [ [age_feb[0], 1], [age_march[0], 2], [age_april[0], 3], [age_may[0], 4], [age_june[0], 5] ];
     age_20 = [ [age_feb[1], 1], [age_march[1], 2], [age_april[1], 3], [age_may[1], 4], [age_june[1], 5] ];
     age_30 = [ [age_feb[2], 1], [age_march[2], 2], [age_april[2], 3], [age_may[2], 4], [age_june[2], 5] ];

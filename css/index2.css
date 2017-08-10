@@ -53,35 +53,11 @@ header{
 }
 
 
-/*----sex.html-----*/
-#sex_sousu{
-  margin-left: 30px;
-  /*background-color: red;*/
-  float: left;
-}
-
-#sex_month{
-  margin-left: 30px;
-  /*background-color: red;*/
-  float: left;
-}
-
-/*----sex.html END----*/
-
-/*----age.html----*/
-#age_sousu{
-  margin-left: 30px;
-}
-
-#age_month{
-  margin-left: 30px;
-}
-/*---age.html end*/
-
 
 /*----グラフ共通部分*/
 .gragh{
   float: left;
+  margin-left: 30px;
 }
 
 /*----ボタン共通部分----*/
