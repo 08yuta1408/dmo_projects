@@ -111,7 +111,7 @@ $(function(){
             ],
             {
                 title: {
-                    text: '職業/月別 母数：' + (frequency_all_person) + '(人)',
+                    text: '国内旅行頻度/月別 母数：' + (frequency_all_person) + '(人)',
                     show: true,
                     fontFamily: 'HGP行書体, Serif',
                     fontSize: '20px',

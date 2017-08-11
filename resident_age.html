@@ -4,18 +4,20 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/index2.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
     <script language="javascript" type="text/javascript" src="js/jquery.min.js"></script>
     <!-- <script src="http://code.jquery.com/jquery-.1.10.1.min.js"></script> -->
     <script language="javascript" type="text/javascript" src="js/jquery.jqplot.min.js"></script>
     <link rel="stylesheet" type="text/css" href="js/jquery.jqplot.min.css" />
     <script class="include" language="javascript" type="text/javascript" src="js/plugins/jqplot.barRenderer.js"></script>
+
     <script class="include" language="javascript" type="text/javascript" src="js/plugins/jqplot.categoryAxisRenderer.js"></script>
     <script class="include" language="javascript" type="text/javascript" src="js/plugins/jqplot.pointLabels.js"></script>
     <script class="include" language="javascript" type="text/javascript" src="js/plugins/jqplot.pieRenderer.js"></script>
 
-    <title>居住地別グラフ</title>
+    <title>居住地×年齢グラフ</title>
   </head>
-
   <body>
     <header>
       <div class="header-left">
@@ -33,30 +35,27 @@
 
 
     <div class="main">
-      <div id="resident_sousu" class="gragh" style="width:900px; height:400px;"></div>
-      <div id="resident_kanto" class="gragh" style="width:900px; height:400px; display: none;"></div>
+      <div id="resident_age_sousu" class="gragh" style="width:900px; height:400px;"></div>
+      <div id="resident_age_kanto" class="gragh" style="width:900px; height:400px; display: none;"></div>
 
       <div class="btn-wrapper">
         <a href="#" class="btn square_btn" id="sosu">総数</a>
         <a href="#" class="btn square_btn" id="month">月別</a>
       </div>
 
-      <div id="resident_tyubu" class="gragh" style="width:900px; height:400px; display: none;"></div>
-      <div id="resident_kansai" class="gragh" style="width:900px; height:400px; display: none;"></div>
-      <div id="resident_toyama" class="gragh" style="width:900px; height:400px; display: none;"></div>
-      <div id="resident_others" class="gragh" style="width:900px; height:400px; display: none;"></div>
+      <div id="resident_age_tyubu" class="gragh" style="width:900px; height:400px; display: none;"></div>
+      <div id="resident_age_kansai" class="gragh" style="width:900px; height:400px; display: none;"></div>
+      <div id="resident_age_toyama" class="gragh" style="width:900px; height:400px; display: none;"></div>
+      <div id="resident_age_others" class="gragh" style="width:900px; height:400px; display: none;"></div>
     </div>
 
 
-
-
-    <script src="javascript/resident/resident_feb.js" charset="utf-8"></script>
-    <script src="javascript/resident/resident_march.js" charset="utf-8"></script>
-    <script src="javascript/resident/resident_april.js" charset="utf-8"></script>
-    <script src="javascript/resident/resident_may.js" charset="utf-8"></script>
-    <script src="javascript/resident/resident_june.js" charset="utf-8"></script>
-
-    <script src="javascript/resident/resident_draw.js" charset="utf-8"></script>
+    <script src="javascript/resident_age/resident_age_feb.js" charset="utf-8"></script>
+    <script src="javascript/resident_age/resident_age_march.js" charset="utf-8"></script>
+    <script src="javascript/resident_age/resident_age_april.js" charset="utf-8"></script>
+    <script src="javascript/resident_age/resident_age_may.js" charset="utf-8"></script>
+    <script src="javascript/resident_age/resident_age_june.js" charset="utf-8"></script>
+    <script src="javascript/resident_age/resident_age_draw.js" charset="utf-8"></script>
 
   </body>
 </html>

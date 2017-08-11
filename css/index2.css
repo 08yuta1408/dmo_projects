@@ -48,9 +48,14 @@ header{
 
 .main{
   padding-top: 50px;
-  height: 600px;
+  /*float: left;*/
+  height: 1000px;
   /*background-color: red;*/
 }
+
+/*#resident_frequency_kanto{
+  background-color: red;
+}*/
 
 
 
@@ -58,11 +63,17 @@ header{
 .gragh{
   float: left;
   margin-left: 30px;
+  margin-bottom: 50px;
 }
+
+/*.jqplot-table-legend {
+  width: 150px;
+}*/
 
 /*----ボタン共通部分----*/
 .btn-wrapper{
-  float:right;
+  margin-left: 40px;
+  float:left;
   /*background-color: red;*/
 }
 

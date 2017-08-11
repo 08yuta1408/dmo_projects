@@ -115,88 +115,92 @@ $(function(){
 
     yticks = ['2月', '3月', '4月', '5月', '6月'];
 
+    var button_count = 0;
     //月別ボタンを押した
     $('#month').click(function(){
       $('.gragh').hide();
       $('#career_month').show();
+      button_count++;
 
-      jQuery . jqplot(
-          'career_month',
-          [
-              career_nourin, career_kensetu, career_seizou, career_orosi, career_kinyu, career_fudousan, career_tusin, career_service, career_koumuin, career_others
+      if(button_count == 1){
+        jQuery . jqplot(
+            'career_month',
+            [
+                career_nourin, career_kensetu, career_seizou, career_orosi, career_kinyu, career_fudousan, career_tusin, career_service, career_koumuin, career_others
 
-          ],
-          {
-              title: {
-                  text: '職業/月別 母数：' + (career_all_person) + '(人)',
-                  show: true,
-                  fontFamily: 'HGP行書体, Serif',
-                  fontSize: '20px',
-                  textAlign: 'center',
-                  textColor: 'black',
-              },
+            ],
+            {
+                title: {
+                    text: '職業/月別 母数：' + (career_all_person) + '(人)',
+                    show: true,
+                    fontFamily: 'HGP行書体, Serif',
+                    fontSize: '20px',
+                    textAlign: 'center',
+                    textColor: 'black',
+                },
 
-              stackSeries: true,
+                stackSeries: true,
 
-              seriesColors:[  '#F78181','#F79F81', '#F6CED8', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#D8D8D8'],
+                seriesColors:[  '#F78181','#F79F81', '#F6CED8', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#D8D8D8'],
 
-              seriesDefaults: {
-                  renderer: jQuery . jqplot . BarRenderer,
+                seriesDefaults: {
+                    renderer: jQuery . jqplot . BarRenderer,
 
-                  pointLabels: {
-                      show: true,
-                      location: 'n',
-                      ypadding: -5,
-                      escapeHTML: false,
-                      edgeTolerance: -20,
-                      formatString: '<b style="color: blue;">%d</b>',
-                      hideZeros: true
-                  },
+                    pointLabels: {
+                        show: true,
+                        location: 'n',
+                        ypadding: -5,
+                        escapeHTML: false,
+                        edgeTolerance: -20,
+                        formatString: '<b style="color: blue;">%d</b>',
+                        hideZeros: true
+                    },
 
-                  rendererOptions: {
-                    barDirection: 'horizontal',
-                    dataLabels: 'percent',
-                    showDataLabels: true,
-                  }
-              },
+                    rendererOptions: {
+                      barDirection: 'horizontal',
+                      dataLabels: 'percent',
+                      showDataLabels: true,
+                    }
+                },
 
-              series: [
-                  { label: '農林水産・鉱業' },
-                  { label: '建設業' },
-                  { label: '製造業' },
-                  { label: '卸・小売・飲食業' },
-                  { label: '金融・保険業' },
-                  { label: '不動産業' },
-                  { label: '運輸・通信業' },
-                  { label: 'サービス業' },
-                  { label: '公務員' },
-                  { label: 'その他・該当なし' }
-              ],
+                series: [
+                    { label: '農林水産・鉱業' },
+                    { label: '建設業' },
+                    { label: '製造業' },
+                    { label: '卸・小売・飲食業' },
+                    { label: '金融・保険業' },
+                    { label: '不動産業' },
+                    { label: '運輸・通信業' },
+                    { label: 'サービス業' },
+                    { label: '公務員' },
+                    { label: 'その他・該当なし' }
+                ],
 
-              legend: {
-                  show: true,
-                  // placement: 'outside',
-                  location: 'e',
-                  // location: 'e',
-                  rendererOptions: {
-                      numberRows: 2
-                  },
-              },
+                legend: {
+                    show: true,
+                    // placement: 'outside',
+                    location: 'e',
+                    // location: 'e',
+                    rendererOptions: {
+                        numberRows: 2
+                    },
+                },
 
-              axes: {
-                  xaxis:{
-                    label: '人数',
-                    // max: 550,
-                  },
+                axes: {
+                    xaxis:{
+                      label: '人数',
+                      // max: 550,
+                    },
 
-                  yaxis: {
-                      ticks: yticks,
-                      renderer: jQuery . jqplot . CategoryAxisRenderer,
+                    yaxis: {
+                        ticks: yticks,
+                        renderer: jQuery . jqplot . CategoryAxisRenderer,
 
-                  }
-              }
-          }
-      );
+                    }
+                }
+            }
+        );
+      }
 
     });
 });

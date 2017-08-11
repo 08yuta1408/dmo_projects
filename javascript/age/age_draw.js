@@ -108,85 +108,89 @@ $(function(){
     age_80 = [ [age_feb[7], 1], [age_march[7], 2], [age_april[7], 3], [age_may[7], 4], [age_june[7], 5] ];
     yticks = ['2月', '3月', '4月', '5月', '6月'];
 
+    var button_count = 0;
     //月別ボタンを押した
     $('#month').click(function(){
+      button_count++;
       $('.gragh').hide();
       $('#age_month').show();
 
-      jQuery . jqplot(
-          'age_month',
-          [
-              age_10, age_20, age_30, age_40, age_50, age_60, age_70, age_80
+      if(button_count == 1){
+        jQuery . jqplot(
+            'age_month',
+            [
+                age_10, age_20, age_30, age_40, age_50, age_60, age_70, age_80
 
-          ],
-          {
-              title: {
-                  text: '年齢/月別 母数：' + (age_all_person) + '(人)',
-                  show: true,
-                  fontFamily: 'HGP行書体, Serif',
-                  fontSize: '20px',
-                  textAlign: 'center',
-                  textColor: 'black',
-              },
+            ],
+            {
+                title: {
+                    text: '年齢/月別 母数：' + (age_all_person) + '(人)',
+                    show: true,
+                    fontFamily: 'HGP行書体, Serif',
+                    fontSize: '20px',
+                    textAlign: 'center',
+                    textColor: 'black',
+                },
 
-              stackSeries: true,
+                stackSeries: true,
 
-              seriesColors:[ '#E2A9F3', '#BCA9F5', '#2E9AFE', '#2EFE9A', '#F7FE2E' ],
+                seriesColors:[ '#E2A9F3', '#BCA9F5', '#2E9AFE', '#2EFE9A', '#F7FE2E' ],
 
-              seriesDefaults: {
-                  renderer: jQuery . jqplot . BarRenderer,
+                seriesDefaults: {
+                    renderer: jQuery . jqplot . BarRenderer,
 
-                  pointLabels: {
-                      show: true,
-                      location: 'n',
-                      ypadding: -5,
-                      escapeHTML: false,
-                      edgeTolerance: -20,
-                      formatString: '<b style="color: blue;">%d</b>',
-                      hideZeros: true
-                  },
+                    pointLabels: {
+                        show: true,
+                        location: 'n',
+                        ypadding: -5,
+                        escapeHTML: false,
+                        edgeTolerance: -20,
+                        formatString: '<b style="color: blue;">%d</b>',
+                        hideZeros: true
+                    },
 
-                  rendererOptions: {
-                    barDirection: 'horizontal',
-                    dataLabels: 'percent',
-                    showDataLabels: true,
-                  }
-              },
+                    rendererOptions: {
+                      barDirection: 'horizontal',
+                      dataLabels: 'percent',
+                      showDataLabels: true,
+                    }
+                },
 
-              series: [
-                  { label: '20代未満' },
-                  { label: '20代' },
-                  { label: '30代' },
-                  { label: '40代' },
-                  { label: '50代' },
-                  { label: '60代' },
-                  { label: '70代' },
-                  { label: '80代以上' }
-              ],
+                series: [
+                    { label: '20代未満' },
+                    { label: '20代' },
+                    { label: '30代' },
+                    { label: '40代' },
+                    { label: '50代' },
+                    { label: '60代' },
+                    { label: '70代' },
+                    { label: '80代以上' }
+                ],
 
-              legend: {
-                  show: true,
-                  // placement: 'outside',
-                  location: 'e',
-                  // location: 'e',
-                  rendererOptions: {
-                      numberRows: 1
-                  },
-              },
+                legend: {
+                    show: true,
+                    // placement: 'outside',
+                    location: 'e',
+                    // location: 'e',
+                    rendererOptions: {
+                        numberRows: 1
+                    },
+                },
 
-              axes: {
-                  xaxis:{
-                    label: '人数',
-                  },
+                axes: {
+                    xaxis:{
+                      label: '人数',
+                    },
 
-                  yaxis: {
-                      ticks: yticks,
-                      renderer: jQuery . jqplot . CategoryAxisRenderer,
+                    yaxis: {
+                        ticks: yticks,
+                        renderer: jQuery . jqplot . CategoryAxisRenderer,
 
-                  }
-              }
-          }
-      );
+                    }
+                }
+            }
+        );
+      }
 
     });
 });
