@@ -68,15 +68,16 @@ $(function(){
 
   // frequency_1 = [ [frequency_feb[0], 1], [frequency_march[0], 2], [frequency_april[0], 3], [frequency_may[0], 4], [frequency_june[0], 5] ];
 
-  resident_age_1 = [ [resident_age_others[0], 1], [resident_age_toyama[0], 2], [resident_age_kansai[0], 3], [resident_age_tyubu[0], 4], [resident_age_kansai[0], 5] ];
-  resident_age_2 = [ [resident_age_others[1], 1], [resident_age_toyama[1], 2], [resident_age_kansai[1], 3], [resident_age_tyubu[1], 4], [resident_age_kansai[1], 5] ];
-  resident_age_3 = [ [resident_age_others[2], 1], [resident_age_toyama[2], 2], [resident_age_kansai[2], 3], [resident_age_tyubu[2], 4], [resident_age_kansai[2], 5] ];
-  resident_age_4 = [ [resident_age_others[3], 1], [resident_age_toyama[3], 2], [resident_age_kansai[3], 3], [resident_age_tyubu[3], 4], [resident_age_kansai[3], 5] ];
-  resident_age_5 = [ [resident_age_others[4], 1], [resident_age_toyama[4], 2], [resident_age_kansai[4], 3], [resident_age_tyubu[4], 4], [resident_age_kansai[4], 5] ];
-  resident_age_6 = [ [resident_age_others[5], 1], [resident_age_toyama[5], 2], [resident_age_kansai[5], 3], [resident_age_tyubu[5], 4], [resident_age_kansai[5], 5] ];
-  resident_age_7 = [ [resident_age_others[6], 1], [resident_age_toyama[6], 2], [resident_age_kansai[6], 3], [resident_age_tyubu[6], 4], [resident_age_kansai[6], 5] ];
+  resident_age_1 = [ [resident_age_others[0], 1], [resident_age_toyama[0], 2], [resident_age_kansai[0], 3], [resident_age_tyubu[0], 4], [resident_age_kanto[0], 5] ];
+  resident_age_2 = [ [resident_age_others[1], 1], [resident_age_toyama[1], 2], [resident_age_kansai[1], 3], [resident_age_tyubu[1], 4], [resident_age_kanto[1], 5] ];
+  resident_age_3 = [ [resident_age_others[2], 1], [resident_age_toyama[2], 2], [resident_age_kansai[2], 3], [resident_age_tyubu[2], 4], [resident_age_kanto[2], 5] ];
+  resident_age_4 = [ [resident_age_others[3], 1], [resident_age_toyama[3], 2], [resident_age_kansai[3], 3], [resident_age_tyubu[3], 4], [resident_age_kanto[3], 5] ];
+  resident_age_5 = [ [resident_age_others[4], 1], [resident_age_toyama[4], 2], [resident_age_kansai[4], 3], [resident_age_tyubu[4], 4], [resident_age_kanto[4], 5] ];
+  resident_age_6 = [ [resident_age_others[5], 1], [resident_age_toyama[5], 2], [resident_age_kansai[5], 3], [resident_age_tyubu[5], 4], [resident_age_kanto[5], 5] ];
+  resident_age_7 = [ [resident_age_others[6], 1], [resident_age_toyama[6], 2], [resident_age_kansai[6], 3], [resident_age_tyubu[6], 4], [resident_age_kanto[6], 5] ];
+  resident_age_8 = [ [resident_age_others[7], 1], [resident_age_toyama[7], 2], [resident_age_kansai[7], 3], [resident_age_tyubu[7], 4], [resident_age_kanto[7], 5] ];
 
-  var yticks = [ 'その他', '関東', '中部', '関西', '富山'];
+  var yticks = [ 'その他', '富山', '関西', '中部', '関東'];
     // yticks = ['2月', '3月', '4月', '5月', '6月'];
 
   // console.log("--------");
@@ -88,7 +89,7 @@ $(function(){
   jQuery . jqplot(
       'resident_age_sousu',
       [
-          resident_age_1, resident_age_2, resident_age_3, resident_age_4, resident_age_5, resident_age_6, resident_age_7
+          resident_age_1, resident_age_2, resident_age_3, resident_age_4, resident_age_5, resident_age_6, resident_age_7, resident_age_8
 
       ],
       {
@@ -103,7 +104,7 @@ $(function(){
 
           stackSeries: true,
 
-          seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#F6CED8'],
+          seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#D8D8D8'],
 
           seriesDefaults: {
               renderer: jQuery . jqplot . BarRenderer,
@@ -175,6 +176,7 @@ $(function(){
   resident_age_kanto_5 = [[resident_age_feb_kanto[4], 1], [resident_age_march_kanto[4], 2],  [resident_age_april_kanto[4], 3],  [resident_age_may_kanto[4], 4],  [resident_age_june_kanto[4], 5] ];
   resident_age_kanto_6 = [[resident_age_feb_kanto[5], 1], [resident_age_march_kanto[5], 2],  [resident_age_april_kanto[5], 3],  [resident_age_may_kanto[5], 4],  [resident_age_june_kanto[5], 5] ];
   resident_age_kanto_7 = [[resident_age_feb_kanto[6], 1], [resident_age_march_kanto[6], 2],  [resident_age_april_kanto[6], 3],  [resident_age_may_kanto[6], 4],  [resident_age_june_kanto[6], 5] ];
+  resident_age_kanto_8 = [[resident_age_feb_kanto[7], 1], [resident_age_march_kanto[7], 2],  [resident_age_april_kanto[7], 3],  [resident_age_may_kanto[7], 4],  [resident_age_june_kanto[7], 5] ];
 
   //中部
   resident_age_tyubu_1 = [[resident_age_feb_tyubu[0], 1], [resident_age_march_tyubu[0], 2],  [resident_age_april_tyubu[0], 3],  [resident_age_may_tyubu[0], 4],  [resident_age_june_tyubu[0], 5] ];
@@ -184,6 +186,7 @@ $(function(){
   resident_age_tyubu_5 = [[resident_age_feb_tyubu[4], 1], [resident_age_march_tyubu[4], 2],  [resident_age_april_tyubu[4], 3],  [resident_age_may_tyubu[4], 4],  [resident_age_june_tyubu[4], 5] ];
   resident_age_tyubu_6 = [[resident_age_feb_tyubu[5], 1], [resident_age_march_tyubu[5], 2],  [resident_age_april_tyubu[5], 3],  [resident_age_may_tyubu[5], 4],  [resident_age_june_tyubu[5], 5] ];
   resident_age_tyubu_7 = [[resident_age_feb_tyubu[6], 1], [resident_age_march_tyubu[6], 2],  [resident_age_april_tyubu[6], 3],  [resident_age_may_tyubu[6], 4],  [resident_age_june_tyubu[6], 5] ];
+  resident_age_tyubu_8 = [[resident_age_feb_tyubu[7], 1], [resident_age_march_tyubu[7], 2],  [resident_age_april_tyubu[7], 3],  [resident_age_may_tyubu[7], 4],  [resident_age_june_tyubu[7], 5] ];
 
   //関西
   resident_age_kansai_1 = [[resident_age_feb_kansai[0], 1], [resident_age_march_kansai[0], 2],  [resident_age_april_kansai[0], 3],  [resident_age_may_kansai[0], 4],  [resident_age_june_kansai[0], 5] ];
@@ -193,6 +196,8 @@ $(function(){
   resident_age_kansai_5 = [[resident_age_feb_kansai[4], 1], [resident_age_march_kansai[4], 2],  [resident_age_april_kansai[4], 3],  [resident_age_may_kansai[4], 4],  [resident_age_june_kansai[4], 5] ];
   resident_age_kansai_6 = [[resident_age_feb_kansai[5], 1], [resident_age_march_kansai[5], 2],  [resident_age_april_kansai[5], 3],  [resident_age_may_kansai[5], 4],  [resident_age_june_kansai[5], 5] ];
   resident_age_kansai_7 = [[resident_age_feb_kansai[6], 1], [resident_age_march_kansai[6], 2],  [resident_age_april_kansai[6], 3],  [resident_age_may_kansai[6], 4],  [resident_age_june_kansai[6], 5] ];
+  resident_age_kansai_8 = [[resident_age_feb_kansai[7], 1], [resident_age_march_kansai[7], 2],  [resident_age_april_kansai[7], 3],  [resident_age_may_kansai[7], 4],  [resident_age_june_kansai[7], 5] ];
+
 
   //富山
   resident_age_toyama_1 = [[resident_age_feb_toyama[0], 1], [resident_age_march_toyama[0], 2],  [resident_age_april_toyama[0], 3],  [resident_age_may_toyama[0], 4],  [resident_age_june_toyama[0], 5] ];
@@ -202,6 +207,8 @@ $(function(){
   resident_age_toyama_5 = [[resident_age_feb_toyama[4], 1], [resident_age_march_toyama[4], 2],  [resident_age_april_toyama[4], 3],  [resident_age_may_toyama[4], 4],  [resident_age_june_toyama[4], 5] ];
   resident_age_toyama_6 = [[resident_age_feb_toyama[5], 1], [resident_age_march_toyama[5], 2],  [resident_age_april_toyama[5], 3],  [resident_age_may_toyama[5], 4],  [resident_age_june_toyama[5], 5] ];
   resident_age_toyama_7 = [[resident_age_feb_toyama[6], 1], [resident_age_march_toyama[6], 2],  [resident_age_april_toyama[6], 3],  [resident_age_may_toyama[6], 4],  [resident_age_june_toyama[6], 5] ];
+  resident_age_toyama_8 = [[resident_age_feb_toyama[7], 1], [resident_age_march_toyama[7], 2],  [resident_age_april_toyama[7], 3],  [resident_age_may_toyama[7], 4],  [resident_age_june_toyama[7], 5] ];
+
 
   //その他
   resident_age_others_1 = [[resident_age_feb_others[0], 1], [resident_age_march_others[0], 2],  [resident_age_april_others[0], 3],  [resident_age_may_others[0], 4],  [resident_age_june_others[0], 5] ];
@@ -211,6 +218,8 @@ $(function(){
   resident_age_others_5 = [[resident_age_feb_others[4], 1], [resident_age_march_others[4], 2],  [resident_age_april_others[4], 3],  [resident_age_may_others[4], 4],  [resident_age_june_others[4], 5] ];
   resident_age_others_6 = [[resident_age_feb_others[5], 1], [resident_age_march_others[5], 2],  [resident_age_april_others[5], 3],  [resident_age_may_others[5], 4],  [resident_age_june_others[5], 5] ];
   resident_age_others_7 = [[resident_age_feb_others[6], 1], [resident_age_march_others[6], 2],  [resident_age_april_others[6], 3],  [resident_age_may_others[6], 4],  [resident_age_june_others[6], 5] ];
+  resident_age_others_8 = [[resident_age_feb_others[7], 1], [resident_age_march_others[7], 2],  [resident_age_april_others[7], 3],  [resident_age_may_others[7], 4],  [resident_age_june_others[7], 5] ];
+
 
 
   yticks_month = ['2月', '3月', '4月', '5月', '6月'];
@@ -233,7 +242,7 @@ $(function(){
       jQuery . jqplot(
           'resident_age_kanto',
           [
-              resident_age_kanto_1, resident_age_kanto_2, resident_age_kanto_3, resident_age_kanto_4, resident_age_kanto_5, resident_age_kanto_6, resident_age_kanto_7
+              resident_age_kanto_1, resident_age_kanto_2, resident_age_kanto_3, resident_age_kanto_4, resident_age_kanto_5, resident_age_kanto_6, resident_age_kanto_7, resident_age_kanto_8
 
           ],
           {
@@ -249,7 +258,7 @@ $(function(){
 
               stackSeries: true,
 
-              seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#F6CED8'],
+              seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#D8D8D8'],
 
               seriesDefaults: {
                   renderer: jQuery . jqplot . BarRenderer,
@@ -295,7 +304,8 @@ $(function(){
               axes: {
                   xaxis:{
                     label: '人数',
-                    max: 250,
+                    // min: 0,
+                    // max: 250,
                   },
 
                   yaxis: {
@@ -310,7 +320,7 @@ $(function(){
       jQuery . jqplot(
           'resident_age_tyubu',
           [
-              resident_age_tyubu_1, resident_age_tyubu_2, resident_age_tyubu_3, resident_age_tyubu_4, resident_age_tyubu_5, resident_age_tyubu_6, resident_age_tyubu_7
+              resident_age_tyubu_1, resident_age_tyubu_2, resident_age_tyubu_3, resident_age_tyubu_4, resident_age_tyubu_5, resident_age_tyubu_6, resident_age_tyubu_7, resident_age_tyubu_8
 
           ],
           {
@@ -326,7 +336,7 @@ $(function(){
 
               stackSeries: true,
 
-              seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#F6CED8'],
+              seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#D8D8D8'],
 
               seriesDefaults: {
                   renderer: jQuery . jqplot . BarRenderer,
@@ -387,7 +397,7 @@ $(function(){
       jQuery . jqplot(
           'resident_age_kansai',
           [
-              resident_age_kansai_1, resident_age_kansai_2, resident_age_kansai_3, resident_age_kansai_4, resident_age_kansai_5, resident_age_kansai_6, resident_age_kansai_7
+              resident_age_kansai_1, resident_age_kansai_2, resident_age_kansai_3, resident_age_kansai_4, resident_age_kansai_5, resident_age_kansai_6, resident_age_kansai_7, resident_age_kansai_8
 
           ],
           {
@@ -403,7 +413,7 @@ $(function(){
 
               stackSeries: true,
 
-              seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#F6CED8'],
+              seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#D8D8D8'],
 
               seriesDefaults: {
                   renderer: jQuery . jqplot . BarRenderer,
@@ -464,7 +474,7 @@ $(function(){
       jQuery . jqplot(
           'resident_age_toyama',
           [
-              resident_age_toyama_1, resident_age_toyama_2, resident_age_toyama_3, resident_age_toyama_4, resident_age_toyama_5, resident_age_toyama_6, resident_age_toyama_7
+              resident_age_toyama_1, resident_age_toyama_2, resident_age_toyama_3, resident_age_toyama_4, resident_age_toyama_5, resident_age_toyama_6, resident_age_toyama_7, resident_age_toyama_8
 
           ],
           {
@@ -480,7 +490,7 @@ $(function(){
 
               stackSeries: true,
 
-              seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#F6CED8'],
+              seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#D8D8D8'],
 
               seriesDefaults: {
                   renderer: jQuery . jqplot . BarRenderer,
@@ -541,7 +551,7 @@ $(function(){
       jQuery . jqplot(
           'resident_age_others',
           [
-              resident_age_others_1, resident_age_others_2, resident_age_others_3, resident_age_others_4, resident_age_others_5, resident_age_others_6, resident_age_others_7
+              resident_age_others_1, resident_age_others_2, resident_age_others_3, resident_age_others_4, resident_age_others_5, resident_age_others_6, resident_age_others_7, resident_age_others_8
 
           ],
           {
@@ -557,7 +567,7 @@ $(function(){
 
               stackSeries: true,
 
-              seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#F6CED8'],
+              seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#D8D8D8'],
 
               seriesDefaults: {
                   renderer: jQuery . jqplot . BarRenderer,
@@ -616,5 +626,7 @@ $(function(){
       );
     }
   });
+
+  console.log(resident_age_feb_kanto[0]);
 
 });
