@@ -47,8 +47,9 @@ header{
 }
 
 .main{
-  padding-top: 50px;
-  /*float: left;*/
+  padding-top: 30px;
+  float: left;
+  width: 950px;
   height: 1000px;
   /*background-color: red;*/
 }
@@ -74,7 +75,8 @@ header{
 .btn-wrapper{
   margin-left: 40px;
   float:left;
-  /*background-color: red;*/
+  /*display: inline-block;*/
+  /*background-color: blue;*/
 }
 
 .btn{
