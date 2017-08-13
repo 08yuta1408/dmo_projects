@@ -5,32 +5,7 @@ $(function(){
 
   //age_allに全ての月別結果を代入する
   for (var i = 0; i < age_all.length; i++) {
-    switch (i) {
-      case 0:
-        age_all[i] = age_feb[i] + age_march[i] + age_april[i] + age_may[i] +  age_june[i];
-        break;
-      case 1:
-        age_all[i] = age_feb[i] + age_march[i] + age_april[i] + age_may[i] +  age_june[i];
-        break;
-      case 2:
-        age_all[i] = age_feb[i] + age_march[i] + age_april[i] + age_may[i] +  age_june[i];
-        break;
-      case 3:
-        age_all[i] = age_feb[i] + age_march[i] + age_april[i] + age_may[i] +  age_june[i];
-        break;
-      case 4:
-        age_all[i] = age_feb[i] + age_march[i] + age_april[i] + age_may[i] +  age_june[i];
-        break;
-      case 5:
-        age_all[i] = age_feb[i] + age_march[i] + age_april[i] + age_may[i] +  age_june[i];
-        break;
-      case 6:
-        age_all[i] = age_feb[i] + age_march[i] + age_april[i] + age_may[i] +  age_june[i];
-        break;
-      case 7:
-        age_all[i] = age_feb[i] + age_march[i] + age_april[i] + age_may[i] +  age_june[i];
-        break;
-    }
+    age_all[i] = age_feb[i] + age_march[i] + age_april[i] + age_may[i] +  age_june[i];
   }
 
   for (var i = 0; i < age_all.length; i++) {
