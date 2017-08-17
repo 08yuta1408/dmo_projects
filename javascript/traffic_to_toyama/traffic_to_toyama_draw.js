@@ -138,7 +138,7 @@ $(function(){
                 legend: {
                     show: true,
                     // placement: 'outside',
-                    location: 'e',
+                    location: 'se',
                     // location: 'e',
                     rendererOptions: {
                         numberRows: 1
