@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/index2.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
@@ -18,7 +16,7 @@
     <script class="include" language="javascript" type="text/javascript" src="js/plugins/jqplot.pointLabels.js"></script>
     <script class="include" language="javascript" type="text/javascript" src="js/plugins/jqplot.pieRenderer.js"></script>
 
-    <title>居住地×リピート回数グラフ</title>
+    <title>交通手段グラフ</title>
   </head>
   <body>
     <header>
@@ -36,32 +34,22 @@
 
 
 
-    <div class="content">
-      <div class="main">
-        <div id="resident_repeat_sousu" class="gragh" style="width:900px; height:400px;"></div>
-
-        <div id="resident_repeat_kanto" class="gragh" style="width:900px; height:400px; display: none;"></div>
-        <div id="resident_repeat_tyubu" class="gragh" style="width:900px; height:400px; display: none;"></div>
-        <div id="resident_repeat_kansai" class="gragh" style="width:900px; height:400px; display: none;"></div>
-        <div id="resident_repeat_toyama" class="gragh" style="width:900px; height:400px; display: none;"></div>
-        <div id="resident_repeat_others" class="gragh" style="width:900px; height:400px; display: none;"></div>
-      </div>
-
-      <div class="btn-wrapper">
-        <a href="#" class="btn square_btn" id="sosu">総数</a>
-        <a href="#" class="btn square_btn" id="month">月別</a>
-      </div>
+    <div class="main">
+      <div id="traffic_in_toyama_sousu" class="gragh" style="width:900px; height:400px;"></div>
+      <div id="traffic_in_toyama_month" class="gragh" style="width:950px; height:400px; display: none;"></div>
     </div>
 
+    <div class="btn-wrapper">
+      <a href="#" class="btn square_btn" id="sosu">総数</a>
+      <a href="#" class="btn square_btn" id="month">月別</a>
+    </div>
 
-
-
-    <script src="javascript/resident_repeat/resident_repeat_feb.js" charset="utf-8"></script>
-    <script src="javascript/resident_repeat/resident_repeat_march.js" charset="utf-8"></script>
-    <script src="javascript/resident_repeat/resident_repeat_april.js" charset="utf-8"></script>
-    <script src="javascript/resident_repeat/resident_repeat_may.js" charset="utf-8"></script>
-    <script src="javascript/resident_repeat/resident_repeat_june.js" charset="utf-8"></script>
-    <script src="javascript/resident_repeat/resident_repeat_draw.js" charset="utf-8"></script>
+    <script src="javascript/traffic_in_toyama/traffic_in_toyama_feb.js" charset="utf-8"></script>
+    <script src="javascript/traffic_in_toyama/traffic_in_toyama_march.js" charset="utf-8"></script>
+    <script src="javascript/traffic_in_toyama/traffic_in_toyama_april.js" charset="utf-8"></script>
+    <script src="javascript/traffic_in_toyama/traffic_in_toyama_may.js" charset="utf-8"></script>
+    <script src="javascript/traffic_in_toyama/traffic_in_toyama_june.js" charset="utf-8"></script>
+    <script src="javascript/traffic_in_toyama/traffic_in_toyama_draw.js" charset="utf-8"></script>
 
   </body>
 </html>

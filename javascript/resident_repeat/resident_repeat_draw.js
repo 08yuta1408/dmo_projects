@@ -130,6 +130,12 @@ $(function(){
       }
   );
 
+  //総数ボタンを押した
+  $('#sosu').click(function(){
+    $('.gragh').hide();
+    $('#resident_repeat_sousu').fadeIn(500);
+  });
+
   //関東
   resident_repeat_kanto_1 = [[resident_repeat_feb_kanto[0], 1], [resident_repeat_march_kanto[0], 2],  [resident_repeat_april_kanto[0], 3],  [resident_repeat_may_kanto[0], 4],  [resident_repeat_june_kanto[0], 5] ];
   resident_repeat_kanto_2 = [[resident_repeat_feb_kanto[1], 1], [resident_repeat_march_kanto[1], 2],  [resident_repeat_april_kanto[1], 3],  [resident_repeat_may_kanto[1], 4],  [resident_repeat_june_kanto[1], 5] ];
@@ -204,11 +210,11 @@ $(function(){
   $('#month').click(function(){
     button_count++;
     $('.gragh').hide();
-    $('#resident_repeat_kanto').show();
-    $('#resident_repeat_tyubu').show();
-    $('#resident_repeat_kansai').show();
-    $('#resident_repeat_toyama').show();
-    $('#resident_repeat_others').show();
+    $('#resident_repeat_kanto').fadeIn();
+    $('#resident_repeat_tyubu').fadeIn();
+    $('#resident_repeat_kansai').fadeIn();
+    $('#resident_repeat_toyama').fadeIn();
+    $('#resident_repeat_others').fadeIn();
 
     // $('#resident_repeat_kanto').show();
     //button_countを考慮しないと、グラフの上にグラフが重なっていく
