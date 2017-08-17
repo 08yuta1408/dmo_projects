@@ -62,7 +62,7 @@ header{
 
 /*----グラフ共通部分*/
 .gragh{
-  float: left;
+  /*float: left;*/
   margin-left: 30px;
   margin-bottom: 50px;
 }
