@@ -120,8 +120,7 @@ $(function(){
                     rendererOptions: {
                       barDirection: 'horizontal',
                       dataLabels: 'percent',
-                      showDataLabels: true,
-                    }
+                    },
                 },
 
                 series: [

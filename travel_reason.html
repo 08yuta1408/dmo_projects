@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/index2.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <script language="javascript" type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-.1.10.1.min.js"></script> -->
+    <script language="javascript" type="text/javascript" src="js/jquery.jqplot.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/jquery.jqplot.min.css" />
+    <script class="include" language="javascript" type="text/javascript" src="js/plugins/jqplot.barRenderer.js"></script>
+
+    <script class="include" language="javascript" type="text/javascript" src="js/plugins/jqplot.categoryAxisRenderer.js"></script>
+    <script class="include" language="javascript" type="text/javascript" src="js/plugins/jqplot.pointLabels.js"></script>
+    <script class="include" language="javascript" type="text/javascript" src="js/plugins/jqplot.pieRenderer.js"></script>
+
+    <title>旅行理由グラフ</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <h2>DMO観光動態調査</h2>
+      </div>
+      <div class="header-right">
+        <ul>
+          <li><a href="index.html"><span class="fa fa-home"></span>ホーム</a></li>
+          <li><a href="member.html"><span class="fa fa-user"></span>メンバー</a></li>
+          <!-- <li><a href="#"><span class="fa fa-question"></span>お問い合わせ</a></li> -->
+        </ul>
+      </div>
+    </header>
+
+
+
+    <div class="main">
+      <div id="travel_reason_sousu" class="gragh" style="width:1000px; height:1200px;"></div>
+      <div id="travel_reason_month" class="gragh" style="width:1000px; height:1200px; display: none;"></div>
+    </div>
+
+    <div class="btn-wrapper">
+      <a href="#" class="btn square_btn" id="sosu">総数</a>
+      <a href="#" class="btn square_btn" id="month">月別</a>
+    </div>
+
+    <script src="javascript/travel_reason/travel_reason_feb.js" charset="utf-8"></script>
+    <script src="javascript/travel_reason/travel_reason_march.js" charset="utf-8"></script>
+    <script src="javascript/travel_reason/travel_reason_april.js" charset="utf-8"></script>
+    <script src="javascript/travel_reason/travel_reason_may.js" charset="utf-8"></script>
+    <script src="javascript/travel_reason/travel_reason_june.js" charset="utf-8"></script>
+    <script src="javascript/travel_reason/travel_reason_draw.js" charset="utf-8"></script>
+
+  </body>
+</html>
