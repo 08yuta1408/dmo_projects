@@ -240,7 +240,7 @@ $(function(){
                   { label: '大いに満足' },
                   { label: '満足' },
                   { label: 'ふつう' },
-                  { label: 'ふまん' },
+                  { label: '不満' },
                   { label: '大いに不満' }
 
               ],
@@ -257,6 +257,7 @@ $(function(){
 
               axes: {
                   xaxis:{
+                    // max: 700,
                     label: '人数',
                   },
 
@@ -313,7 +314,7 @@ $(function(){
                   { label: '大いに満足' },
                   { label: '満足' },
                   { label: 'ふつう' },
-                  { label: 'ふまん' },
+                  { label: '不満' },
                   { label: '大いに不満' }
 
               ],
@@ -386,7 +387,7 @@ $(function(){
                   { label: '大いに満足' },
                   { label: '満足' },
                   { label: 'ふつう' },
-                  { label: 'ふまん' },
+                  { label: '不満' },
                   { label: '大いに不満' }
 
               ],

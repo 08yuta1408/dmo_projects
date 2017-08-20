@@ -10,11 +10,30 @@ li{
 a {
   text-decoration: none;
 }
-
+/*---index.html---*/
 .container{
-  /*margin:0 auto;*/
-  text-align: center;
+  /*padding:0px 20px*/
+  width:1170px;
+  margin:0px auto;
 }
+
+.message-wrapper{
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.toyama-image img{
+  width:600px;
+  height: 400px;
+  padding-top: 50px;
+}
+
+.main-wrapper{
+  text-align: center;
+  height: 400px;
+}
+
+
 
 header{
   /*color: white;*/
@@ -55,15 +74,44 @@ header{
   /*background-color: red;*/
 }
 
+.main-wrapper{
+  height: 1500px;
+  margin-bottom:100px;
+  /*margin-left: 300px;
+  margin-right: 300px;*/
+  border:2px solid black;
+}
+
 /*#resident_frequency_kanto{
   background-color: red;
 }*/
 
 .content{
-  width: 100%;
+  /*width: 100%;*/
+  width: 600px;
+  float: left;
   text-align: center;
 }
 
+.content a{
+  color: white;
+}
+
+.index_btn{
+  margin-left: 120px;
+  width: 300px;
+  border-radius: 4px;
+  display: block;
+  padding: 10px 20px 10px 20px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 4px #1a7940;
+}
+.index_btn:active {
+  box-shadow:none;
+  position:relative;
+  top:4px;
+}
 
 
 /*----グラフ共通部分*/
