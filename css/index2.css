@@ -10,6 +10,12 @@ li{
 a {
   text-decoration: none;
 }
+
+select{
+  width: 250px;
+  display: block;
+  margin: 50px 0px 50px 0px;
+}
 /*---index.html---*/
 .container{
   /*padding:0px 20px*/
@@ -160,3 +166,24 @@ header{
   top:4px;
 }
 /*----ボタン END----*/
+
+
+/*---move_order.html*/
+table{
+  font-size: 14px;
+  border: 1px solid #CCCCCC;
+  border-collapse: collapse;
+}
+
+table th, table td{
+  border:1px solid #CCCCCC;
+  padding:5px 10px;
+}
+
+th{
+  width: 140px;
+}
+
+.move-wrapper{
+  padding-left: 30px;
+}
