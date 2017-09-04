@@ -211,7 +211,7 @@ $(function(){
               axes: {
                   xaxis:{
                     label: '人数',
-                    max: 250,
+                    // max: 250,
                   },
 
                   yaxis: {
