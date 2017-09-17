@@ -5,7 +5,7 @@ $(function(){
 
   //age_allに全ての月別結果を代入する
   for (var i = 0; i < age_all.length; i++) {
-    age_all[i] = age_feb[i] + age_march[i] + age_april[i] + age_may[i] +  age_june[i];
+    age_all[i] = age_2016_october[i] + age_2016_november[i] + age_2016_december[i] + age_2017_january[i] +  age_feb[i] + age_march[i] + age_april[i] + age_may[i] +  age_june[i] + age_2017_july[i] + age_2017_august[i];
   }
 
   for (var i = 0; i < age_all.length; i++) {
@@ -60,7 +60,7 @@ $(function(){
                 show: true,
                 location: 's',
                 rendererOptions: {
-                    numberRows: 1
+                    numberRows: 2
                 },
             }
         }
@@ -73,15 +73,15 @@ $(function(){
       $('#age_sousu').show();
     });
 
-    age_10 = [ [age_feb[0], 1], [age_march[0], 2], [age_april[0], 3], [age_may[0], 4], [age_june[0], 5] ];
-    age_20 = [ [age_feb[1], 1], [age_march[1], 2], [age_april[1], 3], [age_may[1], 4], [age_june[1], 5] ];
-    age_30 = [ [age_feb[2], 1], [age_march[2], 2], [age_april[2], 3], [age_may[2], 4], [age_june[2], 5] ];
-    age_40 = [ [age_feb[3], 1], [age_march[3], 2], [age_april[3], 3], [age_may[3], 4], [age_june[3], 5] ];
-    age_50 = [ [age_feb[4], 1], [age_march[4], 2], [age_april[4], 3], [age_may[4], 4], [age_june[4], 5] ];
-    age_60 = [ [age_feb[5], 1], [age_march[5], 2], [age_april[5], 3], [age_may[5], 4], [age_june[5], 5] ];
-    age_70 = [ [age_feb[6], 1], [age_march[6], 2], [age_april[6], 3], [age_may[6], 4], [age_june[6], 5] ];
-    age_80 = [ [age_feb[7], 1], [age_march[7], 2], [age_april[7], 3], [age_may[7], 4], [age_june[7], 5] ];
-    yticks = ['2月', '3月', '4月', '5月', '6月'];
+    age_10 = [ [age_2016_october[0], 1], [age_2016_november[0], 2], [age_2016_december[0], 3], [age_2017_january[0], 4],  [age_feb[0], 5], [age_march[0], 6], [age_april[0], 7], [age_may[0], 8], [age_june[0], 9], [age_2017_july[0], 10], [age_2017_august[0], 11] ];
+    age_20 = [ [age_2016_october[1], 1], [age_2016_november[1], 2], [age_2016_december[1], 3], [age_2017_january[1], 4],  [age_feb[1], 5], [age_march[1], 6], [age_april[1], 7], [age_may[1], 8], [age_june[1], 9], [age_2017_july[1], 10], [age_2017_august[1], 11] ];
+    age_30 = [ [age_2016_october[2], 1], [age_2016_november[2], 2], [age_2016_december[2], 3], [age_2017_january[2], 4],  [age_feb[2], 5], [age_march[2], 6], [age_april[2], 7], [age_may[2], 8], [age_june[2], 9], [age_2017_july[2], 10], [age_2017_august[2], 11] ];
+    age_40 = [ [age_2016_october[3], 1], [age_2016_november[3], 2], [age_2016_december[3], 3], [age_2017_january[3], 4],  [age_feb[3], 5], [age_march[3], 6], [age_april[3], 7], [age_may[3], 8], [age_june[3], 9], [age_2017_july[3], 10], [age_2017_august[3], 11] ];
+    age_50 = [ [age_2016_october[4], 1], [age_2016_november[4], 2], [age_2016_december[4], 3], [age_2017_january[4], 4],  [age_feb[4], 5], [age_march[4], 6], [age_april[4], 7], [age_may[4], 8], [age_june[4], 9], [age_2017_july[4], 10], [age_2017_august[4], 11] ];
+    age_60 = [ [age_2016_october[5], 1], [age_2016_november[5], 2], [age_2016_december[5], 3], [age_2017_january[5], 4],  [age_feb[5], 5], [age_march[5], 6], [age_april[5], 7], [age_may[5], 8], [age_june[5], 9], [age_2017_july[5], 10], [age_2017_august[5], 11] ];
+    age_70 = [ [age_2016_october[6], 1], [age_2016_november[6], 2], [age_2016_december[6], 3], [age_2017_january[6], 4],  [age_feb[6], 5], [age_march[6], 6], [age_april[6], 7], [age_may[6], 8], [age_june[6], 9], [age_2017_july[6], 10], [age_2017_august[6], 11] ];
+    age_80 = [ [age_2016_october[7], 1], [age_2016_november[7], 2], [age_2016_december[7], 3], [age_2017_january[7], 4],  [age_feb[7], 5], [age_march[7], 6], [age_april[7], 7], [age_may[7], 8], [age_june[7], 9], [age_2017_july[7], 10], [age_2017_august[7], 11] ];
+    yticks = ['10月', '11月', '12月','1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月'];
 
     var button_count = 0;
     //月別ボタンを押した
@@ -109,7 +109,7 @@ $(function(){
 
                 stackSeries: true,
 
-                seriesColors:[ '#E2A9F3', '#BCA9F5', '#2E9AFE', '#2EFE9A', '#F7FE2E' ],
+                seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#F6CED8'],
 
                 seriesDefaults: {
                     renderer: jQuery . jqplot . BarRenderer,

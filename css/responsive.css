@@ -1,14 +1,20 @@
-@media (min-width: 1920px) {
+/*@media (min-width: 1170px) {
   .main-wrapper{
-    margin-bottom:100px;
-    margin-left: 300px;
-    margin-right: 300px;
-    border:2px solid black;
+
   }
 
-  /*.gragh{
-    width: 1200px;
-    height: 600px;
-  }*/
-
+  .clear{
+    clear: both;
+    float: left;
+  }
 }
+@media (min-width: 1170px) {
+  .main-wrapper{
+
+  }
+
+  .clear{
+    clear: both;
+    float: left;
+  }
+}*/
