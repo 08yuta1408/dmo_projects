@@ -2,7 +2,7 @@ var gift_cost_april = [0, 0, 0, 0, 0, 0];      //index番号順に、無し、10
 
 
 $(function(){
-  $.ajax({url: 'json/data_april.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2017/data_april.json', dataType: 'json', async: false}).done(function(data){
 
     for(var i = 0; i < data.length; i++){
       if(data[i]["gift costs"] == "0"){
@@ -30,10 +30,9 @@ $(function(){
     window.alert('読み込みエラー');
   });
 
-  console.log("----4月----");
-  for(var i = 0; i < gift_cost_april.length; i++){
-    console.log(gift_cost_april[i]);
-  }
-
+  // console.log("----4月----");
+  // for(var i = 0; i < gift_cost_april.length; i++){
+  //   console.log(gift_cost_april[i]);
+  // }
 
 });

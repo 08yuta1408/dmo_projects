@@ -2,7 +2,7 @@ var gift_cost_feb = [0, 0, 0, 0, 0, 0];      //index番号順に、無し、1000
 
 
 $(function(){
-  $.ajax({url: 'json/data_february.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2017/data_february.json', dataType: 'json', async: false}).done(function(data){
 
     for(var i = 0; i < data.length; i++){
       if(data[i]["gift costs"] == "0"){
@@ -30,10 +30,10 @@ $(function(){
     window.alert('読み込みエラー');
   });
 
-  console.log("----2月----");
-  for(var i = 0; i < gift_cost_feb.length; i++){
-    console.log(gift_cost_feb[i]);
-  }
+  // console.log("----2月----");
+  // for(var i = 0; i < gift_cost_feb.length; i++){
+  //   console.log(gift_cost_feb[i]);
+  // }
 
 
 });
