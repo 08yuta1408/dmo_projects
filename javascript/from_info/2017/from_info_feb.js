@@ -6,7 +6,7 @@ var from_info_array_feb = [];
 
 
 $(function(){
-  $.ajax({url: 'json/data_february.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2017/data_february.json', dataType: 'json', async: false}).done(function(data){
     for(var i = 0; i < data.length; i++){
       //初期化
       from_info_string_feb = data[i]["where from info"];
@@ -43,9 +43,9 @@ $(function(){
     window.alert('読み込みエラー');
   });
 
-  console.log("----2月----");
-  for(var i = 0; i < from_info_feb.length; i++){
-    console.log(from_info_feb[i]);
-  }
+  // console.log("----2月----");
+  // for(var i = 0; i < from_info_feb.length; i++){
+  //   console.log(from_info_feb[i]);
+  // }
 
 });

@@ -3,7 +3,7 @@ $(function(){
 
   //集計
   for (var i = 0; i < from_info.length; i++) {
-    from_info[i] = from_info_feb[i] + from_info_march[i] + from_info_april[i] + from_info_may[i] + from_info_june[i];
+    from_info[i] = from_info_2016_october[i] + from_info_2016_november[i] + from_info_2016_december[i] + from_info_2017_january[i] + from_info_feb[i] + from_info_march[i] + from_info_april[i] + from_info_may[i] + from_info_june[i] + from_info_2017_july[i] +　from_info_2017_august[i];
   }
   console.log("集計結果 情報入手先");
   for (var i = 0; i < from_info.length; i++) {
@@ -68,19 +68,19 @@ $(function(){
       $('#from_info_sousu').fadeIn(500);
     });
 
-    from_info_1 = [ [from_info_feb[0], 1], [from_info_march[0], 2], [from_info_april[0], 3], [from_info_may[0], 4], [from_info_june[0], 5] ];
-    from_info_2 = [ [from_info_feb[1], 1], [from_info_march[1], 2], [from_info_april[1], 3], [from_info_may[1], 4], [from_info_june[1], 5] ];
-    from_info_3 = [ [from_info_feb[2], 1], [from_info_march[2], 2], [from_info_april[2], 3], [from_info_may[2], 4], [from_info_june[2], 5] ];
-    from_info_4 = [ [from_info_feb[3], 1], [from_info_march[3], 2], [from_info_april[3], 3], [from_info_may[3], 4], [from_info_june[3], 5] ];
-    from_info_5 = [ [from_info_feb[4], 1], [from_info_march[4], 2], [from_info_april[4], 3], [from_info_may[4], 4], [from_info_june[4], 5] ];
-    from_info_6 = [ [from_info_feb[5], 1], [from_info_march[5], 2], [from_info_april[5], 3], [from_info_may[5], 4], [from_info_june[5], 5] ];
-    from_info_7 = [ [from_info_feb[6], 1], [from_info_march[6], 2], [from_info_april[6], 3], [from_info_may[6], 4], [from_info_june[6], 5] ];
-    from_info_8 = [ [from_info_feb[7], 1], [from_info_march[7], 2], [from_info_april[7], 3], [from_info_may[7], 4], [from_info_june[7], 5] ];
-    from_info_9 = [ [from_info_feb[8], 1], [from_info_march[8], 2], [from_info_april[8], 3], [from_info_may[8], 4], [from_info_june[8], 5] ];
-    from_info_10 = [ [from_info_feb[9], 1], [from_info_march[9], 2], [from_info_april[9], 3], [from_info_may[9], 4], [from_info_june[9], 5] ];
-    from_info_11 = [ [from_info_feb[10], 1], [from_info_march[10], 2], [from_info_april[10], 3], [from_info_may[10], 4], [from_info_june[10], 5] ];
+    from_info_1 = [ [from_info_2016_october[0], 1], [from_info_2016_november[0], 2], [from_info_2016_december[0], 3], [from_info_2017_january[0], 4], [from_info_feb[0], 5], [from_info_march[0], 6], [from_info_april[0], 7], [from_info_may[0], 8], [from_info_june[0], 9], [from_info_2017_july[0], 10], [from_info_2017_august[0], 11] ];
+    from_info_2 = [ [from_info_2016_october[1], 1], [from_info_2016_november[1], 2], [from_info_2016_december[1], 3], [from_info_2017_january[1], 4], [from_info_feb[1], 5], [from_info_march[1], 6], [from_info_april[1], 7], [from_info_may[1], 8], [from_info_june[1], 9], [from_info_2017_july[1], 10], [from_info_2017_august[1], 11] ];
+    from_info_3 = [ [from_info_2016_october[2], 1], [from_info_2016_november[2], 2], [from_info_2016_december[2], 3], [from_info_2017_january[2], 4], [from_info_feb[2], 5], [from_info_march[2], 6], [from_info_april[2], 7], [from_info_may[2], 8], [from_info_june[2], 9], [from_info_2017_july[2], 10], [from_info_2017_august[2], 11] ];
+    from_info_4 = [ [from_info_2016_october[3], 1], [from_info_2016_november[3], 2], [from_info_2016_december[3], 3], [from_info_2017_january[3], 4], [from_info_feb[3], 5], [from_info_march[3], 6], [from_info_april[3], 7], [from_info_may[3], 8], [from_info_june[3], 9], [from_info_2017_july[3], 10], [from_info_2017_august[3], 11] ];
+    from_info_5 = [ [from_info_2016_october[4], 1], [from_info_2016_november[4], 2], [from_info_2016_december[4], 3], [from_info_2017_january[4], 4], [from_info_feb[4], 5], [from_info_march[4], 6], [from_info_april[4], 7], [from_info_may[4], 8], [from_info_june[4], 9], [from_info_2017_july[4], 10], [from_info_2017_august[4], 11] ];
+    from_info_6 = [ [from_info_2016_october[5], 1], [from_info_2016_november[5], 2], [from_info_2016_december[5], 3], [from_info_2017_january[5], 4], [from_info_feb[5], 5], [from_info_march[5], 6], [from_info_april[5], 7], [from_info_may[5], 8], [from_info_june[5], 9], [from_info_2017_july[5], 10], [from_info_2017_august[5], 11] ];
+    from_info_7 = [ [from_info_2016_october[6], 1], [from_info_2016_november[6], 2], [from_info_2016_december[6], 3], [from_info_2017_january[6], 4], [from_info_feb[6], 5], [from_info_march[6], 6], [from_info_april[6], 7], [from_info_may[6], 8], [from_info_june[6], 9], [from_info_2017_july[6], 10], [from_info_2017_august[6], 11] ];
+    from_info_8 = [ [from_info_2016_october[7], 1], [from_info_2016_november[7], 2], [from_info_2016_december[7], 3], [from_info_2017_january[7], 4], [from_info_feb[7], 5], [from_info_march[7], 6], [from_info_april[7], 7], [from_info_may[7], 8], [from_info_june[7], 9], [from_info_2017_july[7], 10], [from_info_2017_august[7], 11] ];
+    from_info_9 = [ [from_info_2016_october[8], 1], [from_info_2016_november[8], 2], [from_info_2016_december[8], 3], [from_info_2017_january[8], 4], [from_info_feb[8], 5], [from_info_march[8], 6], [from_info_april[8], 7], [from_info_may[8], 8], [from_info_june[8], 9], [from_info_2017_july[8], 10], [from_info_2017_august[8], 11] ];
+    from_info_10 = [ [from_info_2016_october[9], 1], [from_info_2016_november[9], 2], [from_info_2016_december[9], 3], [from_info_2017_january[9], 4], [from_info_feb[9], 5], [from_info_march[9], 6], [from_info_april[9], 7], [from_info_may[9], 8], [from_info_june[9], 9], [from_info_2017_july[9], 10], [from_info_2017_august[9], 11] ];
+    from_info_11 = [ [from_info_2016_october[10], 1], [from_info_2016_november[10], 2], [from_info_2016_december[10], 3], [from_info_2017_january[10], 4], [from_info_feb[10], 5], [from_info_march[10], 6], [from_info_april[10], 7], [from_info_may[10], 8], [from_info_june[10], 9], [from_info_2017_july[10], 10], [from_info_2017_august[10], 11] ];
 
-    yticks = ['2月', '3月', '4月', '5月', '6月'];
+    yticks = ['2016/10月', '2016/11月', '2016/12月', '2017/ 1月', '2017/ 2月', '2017/ 3月', '2017/ 4月', '2017/ 5月', '2017/ 6月', '2017/ 7月', '2017/ 8月'];
 
     var button_count = 0;
     //月別ボタンを押した
