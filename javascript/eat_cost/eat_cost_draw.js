@@ -3,7 +3,7 @@ $(function(){
 
   //全ての月別結果を代入する
   for (var i = 0; i < eat_cost.length; i++) {
-    eat_cost[i] = eat_cost_feb[i] + eat_cost_march[i] + eat_cost_april[i] + eat_cost_may[i] +  eat_cost_june[i];
+    eat_cost[i] = eat_cost_2016_october[i] + eat_cost_2016_november[i] + eat_cost_2016_december[i] + eat_cost_2017_january[i] + eat_cost_feb[i] + eat_cost_march[i] + eat_cost_april[i] + eat_cost_may[i] +  eat_cost_june[i] + eat_cost_2017_july[i] + eat_cost_2017_august[i];
   }
 
   console.log("集計 2~6月 飲食費");
@@ -36,7 +36,7 @@ $(function(){
                 textColor: 'black',
             },
 
-            seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#F6CED8', '#D8D8D8'],
+            seriesColors:[ '#F5A9D0', '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3'],
 
             seriesDefaults: {
                 renderer: jQuery . jqplot . PieRenderer,
@@ -63,14 +63,14 @@ $(function(){
       $('#eat_cost_sousu').fadeIn(500);
     });
 
-    eat_cost_1 = [ [eat_cost_feb[0], 1], [eat_cost_march[0], 2], [eat_cost_april[0], 3], [eat_cost_may[0], 4], [eat_cost_june[0], 5] ];
-    eat_cost_2 = [ [eat_cost_feb[1], 1], [eat_cost_march[1], 2], [eat_cost_april[1], 3], [eat_cost_may[1], 4], [eat_cost_june[1], 5] ];
-    eat_cost_3 = [ [eat_cost_feb[2], 1], [eat_cost_march[2], 2], [eat_cost_april[2], 3], [eat_cost_may[2], 4], [eat_cost_june[2], 5] ];
-    eat_cost_4 = [ [eat_cost_feb[3], 1], [eat_cost_march[3], 2], [eat_cost_april[3], 3], [eat_cost_may[3], 4], [eat_cost_june[3], 5] ];
-    eat_cost_5= [ [eat_cost_feb[4], 1], [eat_cost_march[4], 2], [eat_cost_april[4], 3], [eat_cost_may[4], 4], [eat_cost_june[4], 5] ];
-    eat_cost_6 = [ [eat_cost_feb[5], 1], [eat_cost_march[5], 2], [eat_cost_april[5], 3], [eat_cost_may[5], 4], [eat_cost_june[5], 5] ];
+    eat_cost_1 = [ [eat_cost_2016_october[0], 1], [eat_cost_2016_november[0], 2], [eat_cost_2016_december[0], 3], [eat_cost_2017_january[0], 4], [eat_cost_feb[0], 5], [eat_cost_march[0], 6], [eat_cost_april[0], 7], [eat_cost_may[0], 8], [eat_cost_june[0], 9], [eat_cost_2017_july[0], 10], [eat_cost_2017_august[0], 11] ];
+    eat_cost_2 = [ [eat_cost_2016_october[1], 1], [eat_cost_2016_november[1], 2], [eat_cost_2016_december[1], 3], [eat_cost_2017_january[1], 4], [eat_cost_feb[1], 5], [eat_cost_march[1], 6], [eat_cost_april[1], 7], [eat_cost_may[1], 8], [eat_cost_june[1], 9], [eat_cost_2017_july[1], 10], [eat_cost_2017_august[1], 11] ];
+    eat_cost_3 = [ [eat_cost_2016_october[2], 1], [eat_cost_2016_november[2], 2], [eat_cost_2016_december[2], 3], [eat_cost_2017_january[2], 4], [eat_cost_feb[2], 5], [eat_cost_march[2], 6], [eat_cost_april[2], 7], [eat_cost_may[2], 8], [eat_cost_june[2], 9], [eat_cost_2017_july[2], 10], [eat_cost_2017_august[2], 11] ];
+    eat_cost_4 = [ [eat_cost_2016_october[3], 1], [eat_cost_2016_november[3], 2], [eat_cost_2016_december[3], 3], [eat_cost_2017_january[3], 4], [eat_cost_feb[3], 5], [eat_cost_march[3], 6], [eat_cost_april[3], 7], [eat_cost_may[3], 8], [eat_cost_june[3], 9], [eat_cost_2017_july[3], 10], [eat_cost_2017_august[3], 11] ];
+    eat_cost_5 = [ [eat_cost_2016_october[4], 1], [eat_cost_2016_november[4], 2], [eat_cost_2016_december[4], 3], [eat_cost_2017_january[4], 4], [eat_cost_feb[4], 5], [eat_cost_march[4], 6], [eat_cost_april[4], 7], [eat_cost_may[4], 8], [eat_cost_june[4], 9], [eat_cost_2017_july[4], 10], [eat_cost_2017_august[4], 11] ];
+    eat_cost_6 = [ [eat_cost_2016_october[5], 1], [eat_cost_2016_november[5], 2], [eat_cost_2016_december[5], 3], [eat_cost_2017_january[5], 4], [eat_cost_feb[5], 5], [eat_cost_march[5], 6], [eat_cost_april[5], 7], [eat_cost_may[5], 8], [eat_cost_june[5], 9], [eat_cost_2017_july[5], 10], [eat_cost_2017_august[5], 11] ];
 
-    yticks = ['2月', '3月', '4月', '5月', '6月'];
+    yticks = ['2016/10月', '2016/11月', '2016/12月', '2017/ 1月', '2017/ 2月', '2017/ 3月', '2017/ 4月', '2017/ 5月', '2017/ 6月', '2017/ 7月', '2017/ 8月'];
 
     var button_count = 0;
     //月別ボタンを押した
@@ -98,7 +98,7 @@ $(function(){
 
                 stackSeries: true,
 
-                seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#F6CED8', '#D8D8D8'],
+                seriesColors:[ '#F5A9D0', '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3'],
 
                 seriesDefaults: {
                     renderer: jQuery . jqplot . BarRenderer,
