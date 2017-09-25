@@ -286,6 +286,7 @@ $(function(){
     $('#age_stay_with_june').show();
     $('#age_stay_with_2017_july').show();
     $('#age_stay_with_2017_august').show();
+    
 
     // $('#resident_age_kanto').show();
     //button_countを考慮しないと、グラフの上にグラフが重なっていく

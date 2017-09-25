@@ -2,7 +2,7 @@ var career_feb = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];      //index番号順に、農�
 
 
 $(function(){
-  $.ajax({url: 'json/data_february.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2017/data_february.json', dataType: 'json', async: false}).done(function(data){
 
     for(var i = 0; i < data.length; i++){
       if(data[i]["job"] == "1"){

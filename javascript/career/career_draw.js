@@ -5,39 +5,7 @@ $(function(){
 
   //career_allに全ての月別結果を代入する
   for (var i = 0; i < career_all.length; i++) {
-    switch (i) {
-      case 0:
-        career_all[i] = career_feb[i] + career_march[i] + career_april[i] + career_may[i] +  career_june[i];
-        break;
-      case 1:
-        career_all[i] = career_feb[i] + career_march[i] + career_april[i] + career_may[i] +  career_june[i];
-        break;
-      case 2:
-        career_all[i] = career_feb[i] + career_march[i] + career_april[i] + career_may[i] +  career_june[i];
-        break;
-      case 3:
-        career_all[i] = career_feb[i] + career_march[i] + career_april[i] + career_may[i] +  career_june[i];
-        break;
-      case 4:
-        career_all[i] = career_feb[i] + career_march[i] + career_april[i] + career_may[i] +  career_june[i];
-        break;
-      case 5:
-        career_all[i] = career_feb[i] + career_march[i] + career_april[i] + career_may[i] +  career_june[i];
-        break;
-      case 6:
-        career_all[i] = career_feb[i] + career_march[i] + career_april[i] + career_may[i] +  career_june[i];
-        break;
-      case 7:
-        career_all[i] = career_feb[i] + career_march[i] + career_april[i] + career_may[i] +  career_june[i];
-        break;
-      case 8:
-        career_all[i] = career_feb[i] + career_march[i] + career_april[i] + career_may[i] +  career_june[i];
-        break;
-      case 9:
-        career_all[i] = career_feb[i] + career_march[i] + career_april[i] + career_may[i] +  career_june[i];
-        break;
-
-    }
+      career_all[i] = career_2016_october[i] + career_2016_november[i] + career_2016_december[i] + career_feb[i] + career_march[i] + career_april[i] + career_may[i] +  career_june[i] + career_2017_july[i] +  career_2017_august[i];
   }
 
   //母数の計算
@@ -102,18 +70,18 @@ $(function(){
       $('#career_sousu').show();
     });
 
-    career_nourin = [ [career_feb[0], 1], [career_march[0], 2], [career_april[0], 3], [career_may[0], 4], [career_june[0], 5] ];
-    career_kensetu = [ [career_feb[1], 1], [career_march[1], 2], [career_april[1], 3], [career_may[1], 4], [career_june[1], 5] ];
-    career_seizou = [ [career_feb[2], 1], [career_march[2], 2], [career_april[2], 3], [career_may[2], 4], [career_june[2], 5] ];
-    career_orosi = [ [career_feb[3], 1], [career_march[3], 2], [career_april[3], 3], [career_may[3], 4], [career_june[3], 5] ];
-    career_kinyu = [ [career_feb[4], 1], [career_march[4], 2], [career_april[4], 3], [career_may[4], 4], [career_june[4], 5] ];
-    career_fudousan = [ [career_feb[5], 1], [career_march[5], 2], [career_april[5], 3], [career_may[5], 4], [career_june[5], 5] ];
-    career_tusin = [ [career_feb[6], 1], [career_march[6], 2], [career_april[6], 3], [career_may[6], 4], [career_june[6], 5] ];
-    career_service = [ [career_feb[7], 1], [career_march[7], 2], [career_april[7], 3], [career_may[7], 4], [career_june[7], 5] ];
-    career_koumuin = [ [career_feb[8], 1], [career_march[8], 2], [career_april[8], 3], [career_may[8], 4], [career_june[8], 5] ];
-    career_others = [ [career_feb[9], 1], [career_march[9], 2], [career_april[9], 3], [career_may[9], 4], [career_june[9], 5] ];
+    career_nourin = [ [career_2016_october[0], 1], [career_2016_november[0], 2], [career_2016_december[0], 3], [career_2017_january[0], 4], [career_feb[0], 5], [career_march[0], 6], [career_april[0], 7], [career_may[0], 8], [career_june[0], 9], [career_2017_july[0], 10], [career_2017_august[0], 11] ];
+    career_kensetu = [ [career_2016_october[1], 1], [career_2016_november[1], 2], [career_2016_december[1], 3], [career_2017_january[1], 4], [career_feb[1], 5], [career_march[1], 6], [career_april[1], 7], [career_may[1], 8], [career_june[1], 9], [career_2017_july[1], 10], [career_2017_august[1], 11] ];
+    career_seizou = [ [career_2016_october[2], 1], [career_2016_november[2], 2], [career_2016_december[2], 3], [career_2017_january[2], 4], [career_feb[2], 5], [career_march[2], 6], [career_april[2], 7], [career_may[2], 8], [career_june[2], 9], [career_2017_july[2], 10], [career_2017_august[2], 11] ];
+    career_orosi = [ [career_2016_october[3], 1], [career_2016_november[3], 2], [career_2016_december[3], 3], [career_2017_january[3], 4], [career_feb[3], 5], [career_march[3], 6], [career_april[3], 7], [career_may[3], 8], [career_june[3], 9], [career_2017_july[3], 10], [career_2017_august[3], 11] ];
+    career_kinyu = [ [career_2016_october[4], 1], [career_2016_november[4], 2], [career_2016_december[4], 3], [career_2017_january[4], 4], [career_feb[4], 5], [career_march[4], 6], [career_april[4], 7], [career_may[4], 8], [career_june[4], 9], [career_2017_july[4], 10], [career_2017_august[4], 11] ];
+    career_fudousan = [ [career_2016_october[5], 1], [career_2016_november[5], 2], [career_2016_december[5], 3], [career_2017_january[5], 4], [career_feb[5], 5], [career_march[5], 6], [career_april[5], 7], [career_may[5], 8], [career_june[5], 9], [career_2017_july[5], 10], [career_2017_august[5], 11] ];
+    career_tusin = [ [career_2016_october[6], 1], [career_2016_november[6], 2], [career_2016_december[6], 3], [career_2017_january[6], 4], [career_feb[6], 5], [career_march[6], 6], [career_april[6], 7], [career_may[6], 8], [career_june[6], 9], [career_2017_july[6], 10], [career_2017_august[6], 11] ];
+    career_service = [ [career_2016_october[7], 1], [career_2016_november[7], 2], [career_2016_december[7], 3], [career_2017_january[7], 4], [career_feb[7], 5], [career_march[7], 6], [career_april[7], 7], [career_may[7], 8], [career_june[7], 9], [career_2017_july[7], 10], [career_2017_august[7], 11] ];
+    career_koumuin = [ [career_2016_october[8], 1], [career_2016_november[8], 2], [career_2016_december[8], 3], [career_2017_january[8], 4], [career_feb[8], 5], [career_march[8], 6], [career_april[8], 7], [career_may[8], 8], [career_june[8], 9], [career_2017_july[8], 10], [career_2017_august[8], 11] ];
+    career_others = [ [career_2016_october[9], 1], [career_2016_november[9], 2], [career_2016_december[9], 3], [career_2017_january[9], 4], [career_feb[9], 5], [career_march[9], 6], [career_april[9], 7], [career_may[9], 8], [career_june[9], 9], [career_2017_july[9], 10], [career_2017_august[9], 11] ];
 
-    yticks = ['2月', '3月', '4月', '5月', '6月'];
+    yticks = ['2016/10月','2016/11月','2016/12月','2017/ 1月','2017/ 2月','2017/ 3月', '2017/ 4月', '2017/ 5月', '2017/ 6月', '2017/ 7月','2017/ 8月'];
 
     var button_count = 0;
     //月別ボタンを押した
