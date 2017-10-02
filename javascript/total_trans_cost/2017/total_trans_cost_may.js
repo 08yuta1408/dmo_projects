@@ -2,7 +2,7 @@ var total_trans_cost_may = [0, 0, 0, 0, 0, 0];      //index番号順に、無し
 
 
 $(function(){
-  $.ajax({url: 'json/data_may.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2017/data_may.json', dataType: 'json', async: false}).done(function(data){
 
     for(var i = 0; i < data.length; i++){
       if(data[i]["Pre total trans expenses"] == "0"){
