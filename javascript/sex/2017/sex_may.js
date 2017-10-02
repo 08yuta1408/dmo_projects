@@ -2,7 +2,7 @@ var man_may = 0;      //5月の男性人数
 var woman_may = 0;    //5月の女性人数
 
 $(function(){
-  $.ajax({url: 'json/data_may.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2017/data_may.json', dataType: 'json', async: false}).done(function(data){
 
     for(var i = 0; i < data.length; i++){
       if(data[i]["sex"] == "1"){

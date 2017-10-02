@@ -2,7 +2,7 @@ var man_march = 0;      //3月の男性人数
 var woman_march = 0;    //3月の女性人数
 
 $(function(){
-  $.ajax({url: 'json/data_march.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2017/data_march.json', dataType: 'json', async: false}).done(function(data){
 
     for(var i = 0; i < data.length; i++){
       if(data[i]["sex"] == "1"){
