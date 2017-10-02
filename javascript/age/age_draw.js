@@ -81,7 +81,7 @@ $(function(){
     age_60 = [ [age_2016_october[5], 1], [age_2016_november[5], 2], [age_2016_december[5], 3], [age_2017_january[5], 4],  [age_feb[5], 5], [age_march[5], 6], [age_april[5], 7], [age_may[5], 8], [age_june[5], 9], [age_2017_july[5], 10], [age_2017_august[5], 11] ];
     age_70 = [ [age_2016_october[6], 1], [age_2016_november[6], 2], [age_2016_december[6], 3], [age_2017_january[6], 4],  [age_feb[6], 5], [age_march[6], 6], [age_april[6], 7], [age_may[6], 8], [age_june[6], 9], [age_2017_july[6], 10], [age_2017_august[6], 11] ];
     age_80 = [ [age_2016_october[7], 1], [age_2016_november[7], 2], [age_2016_december[7], 3], [age_2017_january[7], 4],  [age_feb[7], 5], [age_march[7], 6], [age_april[7], 7], [age_may[7], 8], [age_june[7], 9], [age_2017_july[7], 10], [age_2017_august[7], 11] ];
-    yticks = ['10月', '11月', '12月','1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月'];
+    yticks = ['2016/10月','2016/11月','2016/12月','2017/ 1月','2017/ 2月','2017/ 3月', '2017/ 4月', '2017/ 5月', '2017/ 6月', '2017/ 7月','2017/ 8月'];
 
     var button_count = 0;
     //月別ボタンを押した
