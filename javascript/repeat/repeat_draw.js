@@ -4,7 +4,7 @@ $(function(){
 
   //集計
   for (var i = 0; i < repeat.length; i++) {
-    repeat[i] = repeat_feb[i] + repeat_march[i] + repeat_april[i] + repeat_may[i] + repeat_june[i];
+    repeat[i] = repeat_2016_october[i] + repeat_2016_november[i] + repeat_2016_december[i] + repeat_2017_january[i] + repeat_feb[i] + repeat_march[i] + repeat_april[i] + repeat_may[i] + repeat_june[i] + repeat_2017_july[i] + + repeat_2017_august[i];
   }
   //母数計算
   for (var i = 0; i < repeat.length; i++) {
@@ -57,7 +57,7 @@ $(function(){
                 show: true,
                 location: 's',
                 rendererOptions: {
-                    numberRows: 2
+                    numberRows: 3
                 },
             }
         }
@@ -69,18 +69,19 @@ $(function(){
       $('#repeat_sousu').fadeIn(500);
     });
 
-    repeat_1 = [ [repeat_feb[0], 1], [repeat_march[0], 2], [repeat_april[0], 3], [repeat_may[0], 4], [repeat_june[0], 5] ];
-    repeat_2 = [ [repeat_feb[1], 1], [repeat_march[1], 2], [repeat_april[1], 3], [repeat_may[1], 4], [repeat_june[1], 5] ];
-    repeat_3 = [ [repeat_feb[2], 1], [repeat_march[2], 2], [repeat_april[2], 3], [repeat_may[2], 4], [repeat_june[2], 5] ];
-    repeat_4 = [ [repeat_feb[3], 1], [repeat_march[3], 2], [repeat_april[3], 3], [repeat_may[3], 4], [repeat_june[3], 5] ];
-    repeat_5 = [ [repeat_feb[4], 1], [repeat_march[4], 2], [repeat_april[4], 3], [repeat_may[4], 4], [repeat_june[4], 5] ];
-    repeat_6 = [ [repeat_feb[5], 1], [repeat_march[5], 2], [repeat_april[5], 3], [repeat_may[5], 4], [repeat_june[5], 5] ];
-    repeat_7 = [ [repeat_feb[6], 1], [repeat_march[6], 2], [repeat_april[6], 3], [repeat_may[6], 4], [repeat_june[6], 5] ];
-    repeat_8 = [ [repeat_feb[7], 1], [repeat_march[7], 2], [repeat_april[7], 3], [repeat_may[7], 4], [repeat_june[7], 5] ];
-    repeat_9 = [ [repeat_feb[8], 1], [repeat_march[8], 2], [repeat_april[8], 3], [repeat_may[8], 4], [repeat_june[8], 5] ];
-    repeat_10 = [ [repeat_feb[9], 1], [repeat_march[9], 2], [repeat_april[9], 3], [repeat_may[9], 4], [repeat_june[9], 5] ];
-    repeat_11 = [ [repeat_feb[10], 1], [repeat_march[10], 2], [repeat_april[10], 3], [repeat_may[10], 4], [repeat_june[10], 5] ];
-    yticks = ['2月', '3月', '4月', '5月', '6月'];
+    repeat_1 = [ [repeat_2016_october[0], 1], [repeat_2016_november[0], 2], [repeat_2016_december[0], 3], [repeat_2017_january[0], 4], [repeat_feb[0], 5], [repeat_march[0], 6], [repeat_april[0], 7], [repeat_may[0], 8], [repeat_june[0], 9], [repeat_2017_july[0], 10], [repeat_2017_august[0], 11] ];
+    repeat_2 = [ [repeat_2016_october[1], 1], [repeat_2016_november[1], 2], [repeat_2016_december[1], 3], [repeat_2017_january[1], 4], [repeat_feb[1], 5], [repeat_march[1], 6], [repeat_april[1], 7], [repeat_may[1], 8], [repeat_june[1], 9], [repeat_2017_july[1], 10], [repeat_2017_august[1], 11] ];
+    repeat_3 = [ [repeat_2016_october[2], 1], [repeat_2016_november[2], 2], [repeat_2016_december[2], 3], [repeat_2017_january[2], 4], [repeat_feb[2], 5], [repeat_march[2], 6], [repeat_april[2], 7], [repeat_may[2], 8], [repeat_june[2], 9], [repeat_2017_july[2], 10], [repeat_2017_august[2], 11] ];
+    repeat_4 = [ [repeat_2016_october[3], 1], [repeat_2016_november[3], 2], [repeat_2016_december[3], 3], [repeat_2017_january[3], 4], [repeat_feb[3], 5], [repeat_march[3], 6], [repeat_april[3], 7], [repeat_may[3], 8], [repeat_june[3], 9], [repeat_2017_july[3], 10], [repeat_2017_august[3], 11] ];
+    repeat_5 = [ [repeat_2016_october[4], 1], [repeat_2016_november[4], 2], [repeat_2016_december[4], 3], [repeat_2017_january[4], 4], [repeat_feb[4], 5], [repeat_march[4], 6], [repeat_april[4], 7], [repeat_may[4], 8], [repeat_june[4], 9], [repeat_2017_july[4], 10], [repeat_2017_august[4], 11] ];
+    repeat_6 = [ [repeat_2016_october[5], 1], [repeat_2016_november[5], 2], [repeat_2016_december[5], 3], [repeat_2017_january[5], 4], [repeat_feb[5], 5], [repeat_march[5], 6], [repeat_april[5], 7], [repeat_may[5], 8], [repeat_june[5], 9], [repeat_2017_july[5], 10], [repeat_2017_august[5], 11] ];
+    repeat_7 = [ [repeat_2016_october[6], 1], [repeat_2016_november[6], 2], [repeat_2016_december[6], 3], [repeat_2017_january[6], 4], [repeat_feb[6], 5], [repeat_march[6], 6], [repeat_april[6], 7], [repeat_may[6], 8], [repeat_june[6], 9], [repeat_2017_july[6], 10], [repeat_2017_august[6], 11] ];
+    repeat_8 = [ [repeat_2016_october[7], 1], [repeat_2016_november[7], 2], [repeat_2016_december[7], 3], [repeat_2017_january[7], 4], [repeat_feb[7], 5], [repeat_march[7], 6], [repeat_april[7], 7], [repeat_may[7], 8], [repeat_june[7], 9], [repeat_2017_july[7], 10], [repeat_2017_august[7], 11] ];
+    repeat_9 = [ [repeat_2016_october[8], 1], [repeat_2016_november[8], 2], [repeat_2016_december[8], 3], [repeat_2017_january[8], 4], [repeat_feb[8], 5], [repeat_march[8], 6], [repeat_april[8], 7], [repeat_may[8], 8], [repeat_june[8], 9], [repeat_2017_july[8], 10], [repeat_2017_august[8], 11] ];
+    repeat_10 = [ [repeat_2016_october[9], 1], [repeat_2016_november[9], 2], [repeat_2016_december[9], 3], [repeat_2017_january[9], 4], [repeat_feb[9], 5], [repeat_march[9], 6], [repeat_april[9], 7], [repeat_may[9], 8], [repeat_june[9], 9], [repeat_2017_july[9], 10], [repeat_2017_august[9], 11] ];
+    repeat_11 = [ [repeat_2016_october[10], 1], [repeat_2016_november[10], 2], [repeat_2016_december[10], 3], [repeat_2017_january[10], 4], [repeat_feb[10], 5], [repeat_march[10], 6], [repeat_april[10], 7], [repeat_may[10], 8], [repeat_june[10], 9], [repeat_2017_july[10], 10], [repeat_2017_august[10], 11] ];
+
+    yticks = ['2016/10月','2016/11月','2016/12月','2017/ 1月','2017/ 2月','2017/ 3月', '2017/ 4月', '2017/ 5月', '2017/ 6月', '2017/ 7月','2017/ 8月'];
 
     var button_count = 0;
     //月別ボタンを押した
