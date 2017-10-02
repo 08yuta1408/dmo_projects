@@ -2,7 +2,7 @@ var stay_march = [0, 0, 0, 0];      //index番号順に、日帰り、１泊、�
 
 
 $(function(){
-  $.ajax({url: 'json/data_march.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2017/data_march.json', dataType: 'json', async: false}).done(function(data){
 
     for(var i = 0; i < data.length; i++){
       if(data[i]["stay"] == "1"){
