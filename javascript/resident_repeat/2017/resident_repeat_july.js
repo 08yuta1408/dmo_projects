@@ -7,14 +7,14 @@
     その他：上記以外
 */
 
-var resident_repeat_june_kanto = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、富山県在住、1回目、2回目、3回目、4回目、5回目、6回目、7回目、8回目、9回目、10回以上
-var resident_repeat_june_tyubu = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、富山県在住、1回目、2回目、3回目、4回目、5回目、6回目、7回目、8回目、9回目、10回以上
-var resident_repeat_june_kansai = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、富山県在住、1回目、2回目、3回目、4回目、5回目、6回目、7回目、8回目、9回目、10回以上
-var resident_repeat_june_toyama = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、富山県在住、1回目、2回目、3回目、4回目、5回目、6回目、7回目、8回目、9回目、10回以上
-var resident_repeat_june_others = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、富山県在住、1回目、2回目、3回目、4回目、5回目、6回目、7回目、8回目、9回目、10回以上
+var resident_repeat_2017_july_kanto = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、富山県在住、1回目、2回目、3回目、4回目、5回目、6回目、7回目、8回目、9回目、10回以上
+var resident_repeat_2017_july_tyubu = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、富山県在住、1回目、2回目、3回目、4回目、5回目、6回目、7回目、8回目、9回目、10回以上
+var resident_repeat_2017_july_kansai = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、富山県在住、1回目、2回目、3回目、4回目、5回目、6回目、7回目、8回目、9回目、10回以上
+var resident_repeat_2017_july_toyama = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、富山県在住、1回目、2回目、3回目、4回目、5回目、6回目、7回目、8回目、9回目、10回以上
+var resident_repeat_2017_july_others = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、富山県在住、1回目、2回目、3回目、4回目、5回目、6回目、7回目、8回目、9回目、10回以上
 
 $(function(){
-  $.ajax({url: 'json/data_june.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2017/data_july.json', dataType: 'json', async: false}).done(function(data){
 
     for(var i = 0; i < data.length; i++){
       switch (parseInt(data[i]["from"])){
@@ -27,37 +27,37 @@ $(function(){
         case 13:
         case 14:
           if(data[i]["how many time"] == "0"){
-            resident_repeat_june_kanto[0]++;
+            resident_repeat_2017_july_kanto[0]++;
           }
           if(data[i]["how many time"] == "1"){
-            resident_repeat_june_kanto[1]++;
+            resident_repeat_2017_july_kanto[1]++;
           }
           if (data[i]["how many time"] == "2") {
-            resident_repeat_june_kanto[2]++;
+            resident_repeat_2017_july_kanto[2]++;
           }
           if (data[i]["how many time"] == "3") {
-            resident_repeat_june_kanto[3]++;
+            resident_repeat_2017_july_kanto[3]++;
           }
           if (data[i]["how many time"] == "4") {
-            resident_repeat_june_kanto[4]++;
+            resident_repeat_2017_july_kanto[4]++;
           }
           if (data[i]["how many time"] == "5") {
-            resident_repeat_june_kanto[5]++;
+            resident_repeat_2017_july_kanto[5]++;
           }
           if (data[i]["how many time"] == "6") {
-            resident_repeat_june_kanto[6]++;
+            resident_repeat_2017_july_kanto[6]++;
           }
           if (data[i]["how many time"] == "7") {
-            resident_repeat_june_kanto[7]++;
+            resident_repeat_2017_july_kanto[7]++;
           }
           if (data[i]["how many time"] == "8") {
-            resident_repeat_june_kanto[8]++;
+            resident_repeat_2017_july_kanto[8]++;
           }
           if (data[i]["how many time"] == "9") {
-            resident_repeat_june_kanto[9]++;
+            resident_repeat_2017_july_kanto[9]++;
           }
           if (data[i]["how many time"] == "10") {
-            resident_repeat_june_kanto[10]++;
+            resident_repeat_2017_july_kanto[10]++;
           }
 
           break;
@@ -72,37 +72,37 @@ $(function(){
         case 22:
         case 23:
           if(data[i]["how many time"] == "0"){
-            resident_repeat_june_tyubu[0]++;
+            resident_repeat_2017_july_tyubu[0]++;
           }
           if(data[i]["how many time"] == "1"){
-            resident_repeat_june_tyubu[1]++;
+            resident_repeat_2017_july_tyubu[1]++;
           }
           if (data[i]["how many time"] == "2") {
-            resident_repeat_june_tyubu[2]++;
+            resident_repeat_2017_july_tyubu[2]++;
           }
           if (data[i]["how many time"] == "3") {
-            resident_repeat_june_tyubu[3]++;
+            resident_repeat_2017_july_tyubu[3]++;
           }
           if (data[i]["how many time"] == "4") {
-            resident_repeat_june_tyubu[4]++;
+            resident_repeat_2017_july_tyubu[4]++;
           }
           if (data[i]["how many time"] == "5") {
-            resident_repeat_june_tyubu[5]++;
+            resident_repeat_2017_july_tyubu[5]++;
           }
           if (data[i]["how many time"] == "6") {
-            resident_repeat_june_tyubu[6]++;
+            resident_repeat_2017_july_tyubu[6]++;
           }
           if (data[i]["how many time"] == "7") {
-            resident_repeat_june_tyubu[7]++;
+            resident_repeat_2017_july_tyubu[7]++;
           }
           if (data[i]["how many time"] == "8") {
-            resident_repeat_june_tyubu[8]++;
+            resident_repeat_2017_july_tyubu[8]++;
           }
           if (data[i]["how many time"] == "9") {
-            resident_repeat_june_tyubu[9]++;
+            resident_repeat_2017_july_tyubu[9]++;
           }
           if (data[i]["how many time"] == "10") {
-            resident_repeat_june_tyubu[10]++;
+            resident_repeat_2017_july_tyubu[10]++;
           }
 
           break;
@@ -117,37 +117,37 @@ $(function(){
         case 30:
           //関西出身の人々をカウント
           if(data[i]["how many time"] == "0"){
-            resident_repeat_june_kansai[0]++;
+            resident_repeat_2017_july_kansai[0]++;
           }
           if(data[i]["how many time"] == "1"){
-            resident_repeat_june_kansai[1]++;
+            resident_repeat_2017_july_kansai[1]++;
           }
           if (data[i]["how many time"] == "2") {
-            resident_repeat_june_kansai[2]++;
+            resident_repeat_2017_july_kansai[2]++;
           }
           if (data[i]["how many time"] == "3") {
-            resident_repeat_june_kansai[3]++;
+            resident_repeat_2017_july_kansai[3]++;
           }
           if (data[i]["how many time"] == "4") {
-            resident_repeat_june_kansai[4]++;
+            resident_repeat_2017_july_kansai[4]++;
           }
           if (data[i]["how many time"] == "5") {
-            resident_repeat_june_kansai[5]++;
+            resident_repeat_2017_july_kansai[5]++;
           }
           if (data[i]["how many time"] == "6") {
-            resident_repeat_june_kansai[6]++;
+            resident_repeat_2017_july_kansai[6]++;
           }
           if (data[i]["how many time"] == "7") {
-            resident_repeat_june_kansai[7]++;
+            resident_repeat_2017_july_kansai[7]++;
           }
           if (data[i]["how many time"] == "8") {
-            resident_repeat_june_kansai[8]++;
+            resident_repeat_2017_july_kansai[8]++;
           }
           if (data[i]["how many time"] == "9") {
-            resident_repeat_june_kansai[9]++;
+            resident_repeat_2017_july_kansai[9]++;
           }
           if (data[i]["how many time"] == "10") {
-            resident_repeat_june_kansai[10]++;
+            resident_repeat_2017_july_kansai[10]++;
           }
 
           break;
@@ -155,37 +155,37 @@ $(function(){
         //富山出身の人々をカウント
         case 16:
           if(data[i]["how many time"] == "0"){
-            resident_repeat_june_toyama[0]++;
+            resident_repeat_2017_july_toyama[0]++;
           }
           if(data[i]["how many time"] == "1"){
-            resident_repeat_june_toyama[1]++;
+            resident_repeat_2017_july_toyama[1]++;
           }
           if (data[i]["how many time"] == "2") {
-            resident_repeat_june_toyama[2]++;
+            resident_repeat_2017_july_toyama[2]++;
           }
           if (data[i]["how many time"] == "3") {
-            resident_repeat_june_toyama[3]++;
+            resident_repeat_2017_july_toyama[3]++;
           }
           if (data[i]["how many time"] == "4") {
-            resident_repeat_june_toyama[4]++;
+            resident_repeat_2017_july_toyama[4]++;
           }
           if (data[i]["how many time"] == "5") {
-            resident_repeat_june_toyama[5]++;
+            resident_repeat_2017_july_toyama[5]++;
           }
           if (data[i]["how many time"] == "6") {
-            resident_repeat_june_toyama[6]++;
+            resident_repeat_2017_july_toyama[6]++;
           }
           if (data[i]["how many time"] == "7") {
-            resident_repeat_june_toyama[7]++;
+            resident_repeat_2017_july_toyama[7]++;
           }
           if (data[i]["how many time"] == "8") {
-            resident_repeat_june_toyama[8]++;
+            resident_repeat_2017_july_toyama[8]++;
           }
           if (data[i]["how many time"] == "9") {
-            resident_repeat_june_toyama[9]++;
+            resident_repeat_2017_july_toyama[9]++;
           }
           if (data[i]["how many time"] == "10") {
-            resident_repeat_june_toyama[10]++;
+            resident_repeat_2017_july_toyama[10]++;
           }
 
           break;
@@ -193,37 +193,37 @@ $(function(){
         //その他
         default:
           if(data[i]["how many time"] == "0"){
-            resident_repeat_june_others[0]++;
+            resident_repeat_2017_july_others[0]++;
           }
           if(data[i]["how many time"] == "1"){
-            resident_repeat_june_others[1]++;
+            resident_repeat_2017_july_others[1]++;
           }
           if (data[i]["how many time"] == "2") {
-            resident_repeat_june_others[2]++;
+            resident_repeat_2017_july_others[2]++;
           }
           if (data[i]["how many time"] == "3") {
-            resident_repeat_june_others[3]++;
+            resident_repeat_2017_july_others[3]++;
           }
           if (data[i]["how many time"] == "4") {
-            resident_repeat_june_others[4]++;
+            resident_repeat_2017_july_others[4]++;
           }
           if (data[i]["how many time"] == "5") {
-            resident_repeat_june_others[5]++;
+            resident_repeat_2017_july_others[5]++;
           }
           if (data[i]["how many time"] == "6") {
-            resident_repeat_june_others[6]++;
+            resident_repeat_2017_july_others[6]++;
           }
           if (data[i]["how many time"] == "7") {
-            resident_repeat_june_others[7]++;
+            resident_repeat_2017_july_others[7]++;
           }
           if (data[i]["how many time"] == "8") {
-            resident_repeat_june_others[8]++;
+            resident_repeat_2017_july_others[8]++;
           }
           if (data[i]["how many time"] == "9") {
-            resident_repeat_june_others[9]++;
+            resident_repeat_2017_july_others[9]++;
           }
           if (data[i]["how many time"] == "10") {
-            resident_repeat_june_others[10]++;
+            resident_repeat_2017_july_others[10]++;
           }
 
           break;
@@ -235,10 +235,5 @@ $(function(){
   .fail(function(){
     window.alert('読み込みエラー');
   })
-
-  console.log("----6月(関東)----");
-  for (var i = 0; i < resident_repeat_june_kanto.length; i++) {
-    console.log(resident_repeat_june_kanto[i]);
-  }
 
 });

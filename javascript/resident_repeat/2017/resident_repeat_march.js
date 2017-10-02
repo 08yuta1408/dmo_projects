@@ -14,7 +14,7 @@ var resident_repeat_march_toyama = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];    //index
 var resident_repeat_march_others = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、富山県在住、1回目、2回目、3回目、4回目、5回目、6回目、7回目、8回目、9回目、10回以上
 
 $(function(){
-  $.ajax({url: 'json/data_march.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2017/data_march.json', dataType: 'json', async: false}).done(function(data){
 
     for(var i = 0; i < data.length; i++){
       switch (parseInt(data[i]["from"])){

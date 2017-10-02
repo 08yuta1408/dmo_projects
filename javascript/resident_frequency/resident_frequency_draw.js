@@ -49,10 +49,6 @@ $(function(){
   var yticks = [ 'その他', '関東', '中部', '関西', '富山'];
     // yticks = ['2月', '3月', '4月', '5月', '6月'];
 
-  console.log("--------");
-  for (var i = 0; i < resident_frequency_1.length; i++) {
-    console.log(resident_frequency_1[i]);
-  }
 
   //デフォルトで総数グラフを表示
   jQuery . jqplot(
