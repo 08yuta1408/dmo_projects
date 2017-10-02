@@ -1,5 +1,3 @@
-// var resident_age_may = [0, 0, 0, 0, 0, 0, 0,]      //index番号順に、関東・中部・関西・富山・それ以外
-
 /*
   地域区分の定義
     関東：茨城、栃木、群馬、埼玉、千葉、東京、神奈川
@@ -9,14 +7,14 @@
     その他：上記以外
 */
 
-var resident_age_may_kanto = [0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、20代未満・20代・30代・40代・50代・60代・70代・80代以上
-var resident_age_may_tyubu = [0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、20代未満・20代・30代・40代・50代・60代・70代・80代以上
-var resident_age_may_kansai = [0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、20代未満・20代・30代・40代・50代・60代・70代・80代以上
-var resident_age_may_toyama = [0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、20代未満・20代・30代・40代・50代・60代・70代・80代以上
-var resident_age_may_others = [0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、20代未満・20代・30代・40代・50代・60代・70代・80代以上
+var resident_age_2016_december_kanto = [0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、20代未満・20代・30代・40代・50代・60代・70代・80代以上
+var resident_age_2016_december_tyubu = [0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、20代未満・20代・30代・40代・50代・60代・70代・80代以上
+var resident_age_2016_december_kansai = [0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、20代未満・20代・30代・40代・50代・60代・70代・80代以上
+var resident_age_2016_december_toyama = [0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、20代未満・20代・30代・40代・50代・60代・70代・80代以上
+var resident_age_2016_december_others = [0, 0, 0, 0, 0, 0, 0, 0];    //index番号順に、20代未満・20代・30代・40代・50代・60代・70代・80代以上
 
 $(function(){
-  $.ajax({url: 'json/data_may.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2016/data_december.json', dataType: 'json', async: false}).done(function(data){
 
     for(var i = 0; i < data.length; i++){
       switch (parseInt(data[i]["from"])){
@@ -29,28 +27,28 @@ $(function(){
         case 13:
         case 14:
           if(data[i]["age"] == "1"){
-            resident_age_may_kanto[0]++;
+            resident_age_2016_december_kanto[0]++;
           }
           if (data[i]["age"] == "2") {
-            resident_age_may_kanto[1]++;
+            resident_age_2016_december_kanto[1]++;
           }
           if (data[i]["age"] == "3") {
-            resident_age_may_kanto[2]++;
+            resident_age_2016_december_kanto[2]++;
           }
           if (data[i]["age"] == "4") {
-            resident_age_may_kanto[3]++;
+            resident_age_2016_december_kanto[3]++;
           }
           if (data[i]["age"] == "5") {
-            resident_age_may_kanto[4]++;
+            resident_age_2016_december_kanto[4]++;
           }
           if (data[i]["age"] == "6") {
-            resident_age_may_kanto[5]++;
+            resident_age_2016_december_kanto[5]++;
           }
           if (data[i]["age"] == "7") {
-            resident_age_may_kanto[6]++;
+            resident_age_2016_december_kanto[6]++;
           }
           if (data[i]["age"] == "8") {
-            resident_age_may_kanto[7]++;
+            resident_age_2016_december_kanto[7]++;
           }
 
           break;
@@ -65,28 +63,28 @@ $(function(){
         case 22:
         case 23:
           if(data[i]["age"] == "1"){
-            resident_age_may_tyubu[0]++;
+            resident_age_2016_december_tyubu[0]++;
           }
           if (data[i]["age"] == "2") {
-            resident_age_may_tyubu[1]++;
+            resident_age_2016_december_tyubu[1]++;
           }
           if (data[i]["age"] == "3") {
-            resident_age_may_tyubu[2]++;
+            resident_age_2016_december_tyubu[2]++;
           }
           if (data[i]["age"] == "4") {
-            resident_age_may_tyubu[3]++;
+            resident_age_2016_december_tyubu[3]++;
           }
           if (data[i]["age"] == "5") {
-            resident_age_may_tyubu[4]++;
+            resident_age_2016_december_tyubu[4]++;
           }
           if (data[i]["age"] == "6") {
-            resident_age_may_tyubu[5]++;
+            resident_age_2016_december_tyubu[5]++;
           }
           if (data[i]["age"] == "7") {
-            resident_age_may_tyubu[6]++;
+            resident_age_2016_december_tyubu[6]++;
           }
           if (data[i]["age"] == "8") {
-            resident_age_may_tyubu[7]++;
+            resident_age_2016_december_tyubu[7]++;
           }
 
           break;
@@ -101,28 +99,28 @@ $(function(){
         case 30:
           //関西出身の人々をカウント
           if(data[i]["age"] == "1"){
-            resident_age_may_kansai[0]++;
+            resident_age_2016_december_kansai[0]++;
           }
           if (data[i]["age"] == "2") {
-            resident_age_may_kansai[1]++;
+            resident_age_2016_december_kansai[1]++;
           }
           if (data[i]["age"] == "3") {
-            resident_age_may_kansai[2]++;
+            resident_age_2016_december_kansai[2]++;
           }
           if (data[i]["age"] == "4") {
-            resident_age_may_kansai[3]++;
+            resident_age_2016_december_kansai[3]++;
           }
           if (data[i]["age"] == "5") {
-            resident_age_may_kansai[4]++;
+            resident_age_2016_december_kansai[4]++;
           }
           if (data[i]["age"] == "6") {
-            resident_age_may_kansai[5]++;
+            resident_age_2016_december_kansai[5]++;
           }
           if (data[i]["age"] == "7") {
-            resident_age_may_kansai[6]++;
+            resident_age_2016_december_kansai[6]++;
           }
           if (data[i]["age"] == "8") {
-            resident_age_may_kansai[7]++;
+            resident_age_2016_december_kansai[7]++;
           }
 
           break;
@@ -130,28 +128,28 @@ $(function(){
         //富山出身の人々をカウント
         case 16:
           if(data[i]["age"] == "1"){
-            resident_age_may_toyama[0]++;
+            resident_age_2016_december_toyama[0]++;
           }
           if (data[i]["age"] == "2") {
-            resident_age_may_toyama[1]++;
+            resident_age_2016_december_toyama[1]++;
           }
           if (data[i]["age"] == "3") {
-            resident_age_may_toyama[2]++;
+            resident_age_2016_december_toyama[2]++;
           }
           if (data[i]["age"] == "4") {
-            resident_age_may_toyama[3]++;
+            resident_age_2016_december_toyama[3]++;
           }
           if (data[i]["age"] == "5") {
-            resident_age_may_toyama[4]++;
+            resident_age_2016_december_toyama[4]++;
           }
           if (data[i]["age"] == "6") {
-            resident_age_may_toyama[5]++;
+            resident_age_2016_december_toyama[5]++;
           }
           if (data[i]["age"] == "7") {
-            resident_age_may_toyama[6]++;
+            resident_age_2016_december_toyama[6]++;
           }
           if (data[i]["age"] == "8") {
-            resident_age_may_toyama[7]++;
+            resident_age_2016_december_toyama[7]++;
           }
 
           break;
@@ -159,28 +157,28 @@ $(function(){
         //その他
         default:
           if(data[i]["age"] == "1"){
-            resident_age_may_others[0]++;
+            resident_age_2016_december_others[0]++;
           }
           if (data[i]["age"] == "2") {
-            resident_age_may_others[1]++;
+            resident_age_2016_december_others[1]++;
           }
           if (data[i]["age"] == "3") {
-            resident_age_may_others[2]++;
+            resident_age_2016_december_others[2]++;
           }
           if (data[i]["age"] == "4") {
-            resident_age_may_others[3]++;
+            resident_age_2016_december_others[3]++;
           }
           if (data[i]["age"] == "5") {
-            resident_age_may_others[4]++;
+            resident_age_2016_december_others[4]++;
           }
           if (data[i]["age"] == "6") {
-            resident_age_may_others[5]++;
+            resident_age_2016_december_others[5]++;
           }
           if (data[i]["age"] == "7") {
-            resident_age_may_others[6]++;
+            resident_age_2016_december_others[6]++;
           }
           if (data[i]["age"] == "8") {
-            resident_age_may_others[7]++;
+            resident_age_2016_december_others[7]++;
           }
 
           break;
@@ -193,9 +191,5 @@ $(function(){
     window.alert('読み込みエラー');
   })
 
-  console.log("----5月(関東)----");
-  for (var i = 0; i < resident_age_may_kanto.length; i++) {
-    console.log(resident_age_may_kanto[i]);
-  }
 
 });
