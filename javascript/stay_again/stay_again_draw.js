@@ -3,14 +3,14 @@ var stay_again = [0, 0, 0, 0, 0, 0];      //index番号順に、県内在住、�
 $(function(){
   //集計
   for (var i = 0; i < stay_again.length; i++) {
-    stay_again[i] = stay_again_feb[i] + stay_again_march[i] + stay_again_april[i] + stay_again_may[i] + stay_again_june[i];
+    stay_again[i] = stay_again_2016_october[i] + stay_again_2016_november[i] + stay_again_2016_december[i] + stay_again_2017_january[i] + stay_again_feb[i] + stay_again_march[i] + stay_again_april[i] + stay_again_may[i] +  stay_again_june[i] + stay_again_2017_july[i] + stay_again_2017_august[i];
   }
 
   //集計コンソール表示
-  console.log("---全体集計---");
-  for (var i = 0; i < stay_again.length; i++) {
-    console.log(stay_again[i]);
-  }
+  // console.log("---全体集計---");
+  // for (var i = 0; i < stay_again.length; i++) {
+  //   console.log(stay_again[i]);
+  // }
 
   //デフォルトは、総数グラフ
   jQuery . jqplot(
@@ -64,13 +64,14 @@ $(function(){
     });
 
 
-    stay_again_1 = [ [stay_again_feb[0], 1], [stay_again_march[0], 2], [stay_again_april[0], 3], [stay_again_may[0], 4], [stay_again_june[0], 5] ];
-    stay_again_2 = [ [stay_again_feb[1], 1], [stay_again_march[1], 2], [stay_again_april[1], 3], [stay_again_may[1], 4], [stay_again_june[1], 5] ];
-    stay_again_3 = [ [stay_again_feb[2], 1], [stay_again_march[2], 2], [stay_again_april[2], 3], [stay_again_may[2], 4], [stay_again_june[2], 5] ];
-    stay_again_4 = [ [stay_again_feb[3], 1], [stay_again_march[3], 2], [stay_again_april[3], 3], [stay_again_may[3], 4], [stay_again_june[3], 5] ];
-    stay_again_5 = [ [stay_again_feb[4], 1], [stay_again_march[4], 2], [stay_again_april[4], 3], [stay_again_may[4], 4], [stay_again_june[4], 5] ];
-    stay_again_6 = [ [stay_again_feb[5], 1], [stay_again_march[5], 2], [stay_again_april[5], 3], [stay_again_may[5], 4], [stay_again_june[5], 5] ];
-    yticks = ['2月', '3月', '4月', '5月', '6月'];
+    stay_again_1 = [ [stay_again_2016_october[0], 1], [stay_again_2016_november[0], 2], [stay_again_2016_december[0], 3], [stay_again_2017_january[0], 4],  [stay_again_feb[0], 5], [stay_again_march[0], 6], [stay_again_april[0], 7], [stay_again_may[0], 8], [stay_again_june[0], 9], [stay_again_2017_july[0], 10], [stay_again_2017_august[0], 11] ];
+    stay_again_2 = [ [stay_again_2016_october[1], 1], [stay_again_2016_november[1], 2], [stay_again_2016_december[1], 3], [stay_again_2017_january[1], 4],  [stay_again_feb[1], 5], [stay_again_march[1], 6], [stay_again_april[1], 7], [stay_again_may[1], 8], [stay_again_june[1], 9], [stay_again_2017_july[1], 10], [stay_again_2017_august[1], 11] ];
+    stay_again_3 = [ [stay_again_2016_october[2], 1], [stay_again_2016_november[2], 2], [stay_again_2016_december[2], 3], [stay_again_2017_january[2], 4],  [stay_again_feb[2], 5], [stay_again_march[2], 6], [stay_again_april[2], 7], [stay_again_may[2], 8], [stay_again_june[2], 9], [stay_again_2017_july[2], 10], [stay_again_2017_august[2], 11] ];
+    stay_again_4 = [ [stay_again_2016_october[3], 1], [stay_again_2016_november[3], 2], [stay_again_2016_december[3], 3], [stay_again_2017_january[3], 4],  [stay_again_feb[3], 5], [stay_again_march[3], 6], [stay_again_april[3], 7], [stay_again_may[3], 8], [stay_again_june[3], 9], [stay_again_2017_july[3], 10], [stay_again_2017_august[3], 11] ];
+    stay_again_5 = [ [stay_again_2016_october[4], 1], [stay_again_2016_november[4], 2], [stay_again_2016_december[4], 3], [stay_again_2017_january[4], 4],  [stay_again_feb[4], 5], [stay_again_march[4], 6], [stay_again_april[4], 7], [stay_again_may[4], 8], [stay_again_june[4], 9], [stay_again_2017_july[4], 10], [stay_again_2017_august[4], 11] ];
+    stay_again_6 = [ [stay_again_2016_october[5], 1], [stay_again_2016_november[5], 2], [stay_again_2016_december[5], 3], [stay_again_2017_january[5], 4],  [stay_again_feb[5], 5], [stay_again_march[5], 6], [stay_again_april[5], 7], [stay_again_may[5], 8], [stay_again_june[5], 9], [stay_again_2017_july[5], 10], [stay_again_2017_august[5], 11] ];
+
+    yticks = ['2016/10月','2016/11月','2016/12月','2017/ 1月','2017/ 2月','2017/ 3月', '2017/ 4月', '2017/ 5月', '2017/ 6月', '2017/ 7月','2017/ 8月'];
 
     var button_count = 0;
     //月別ボタンを押した
