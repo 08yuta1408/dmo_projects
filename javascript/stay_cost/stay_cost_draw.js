@@ -3,12 +3,7 @@ $(function(){
 
   //全ての月別結果を代入する
   for (var i = 0; i < stay_cost.length; i++) {
-    stay_cost[i] = stay_cost_feb[i] + stay_cost_march[i] + stay_cost_april[i] + stay_cost_may[i] +  stay_cost_june[i];
-  }
-
-  console.log("集計 2~6月 宿泊費");
-  for (var i = 0; i < stay_cost.length; i++) {
-    console.log(stay_cost[i]);
+    stay_cost[i] = stay_cost_2016_october[i] + stay_cost_2016_november[i] + stay_cost_2016_december[i] + stay_cost_2017_january[i] + stay_cost_feb[i] + stay_cost_march[i] + stay_cost_april[i] + stay_cost_may[i] +  stay_cost_june[i] + stay_cost_2017_july[i] + stay_cost_2017_august[i];
   }
 
   //デフォルトは、総数グラフ
@@ -68,17 +63,17 @@ $(function(){
       $('#stay_cost_sousu').fadeIn(500);
     });
 
-    stay_cost_1 = [ [stay_cost_feb[0], 1], [stay_cost_march[0], 2], [stay_cost_april[0], 3], [stay_cost_may[0], 4], [stay_cost_june[0], 5] ];
-    stay_cost_2 = [ [stay_cost_feb[1], 1], [stay_cost_march[1], 2], [stay_cost_april[1], 3], [stay_cost_may[1], 4], [stay_cost_june[1], 5] ];
-    stay_cost_3 = [ [stay_cost_feb[2], 1], [stay_cost_march[2], 2], [stay_cost_april[2], 3], [stay_cost_may[2], 4], [stay_cost_june[2], 5] ];
-    stay_cost_4 = [ [stay_cost_feb[3], 1], [stay_cost_march[3], 2], [stay_cost_april[3], 3], [stay_cost_may[3], 4], [stay_cost_june[3], 5] ];
-    stay_cost_5= [ [stay_cost_feb[4], 1], [stay_cost_march[4], 2], [stay_cost_april[4], 3], [stay_cost_may[4], 4], [stay_cost_june[4], 5] ];
-    stay_cost_6 = [ [stay_cost_feb[5], 1], [stay_cost_march[5], 2], [stay_cost_april[5], 3], [stay_cost_may[5], 4], [stay_cost_june[5], 5] ];
-    stay_cost_7 = [ [stay_cost_feb[6], 1], [stay_cost_march[6], 2], [stay_cost_april[6], 3], [stay_cost_may[6], 4], [stay_cost_june[6], 5] ];
-    stay_cost_8= [ [stay_cost_feb[7], 1], [stay_cost_march[7], 2], [stay_cost_april[7], 3], [stay_cost_may[7], 4], [stay_cost_june[7], 5] ];
-    stay_cost_9 = [ [stay_cost_feb[8], 1], [stay_cost_march[8], 2], [stay_cost_april[8], 3], [stay_cost_may[8], 4], [stay_cost_june[8], 5] ];
+    stay_cost_1 = [ [stay_cost_2016_october[0], 1], [stay_cost_2016_november[0], 2], [stay_cost_2016_december[0], 3], [stay_cost_2017_january[0], 4],  [stay_cost_feb[0], 5], [stay_cost_march[0], 6], [stay_cost_april[0], 7], [stay_cost_may[0], 8], [stay_cost_june[0], 9], [stay_cost_2017_july[0], 10], [stay_cost_2017_august[0], 11] ];
+    stay_cost_2 = [ [stay_cost_2016_october[1], 1], [stay_cost_2016_november[1], 2], [stay_cost_2016_december[1], 3], [stay_cost_2017_january[1], 4],  [stay_cost_feb[1], 5], [stay_cost_march[1], 6], [stay_cost_april[1], 7], [stay_cost_may[1], 8], [stay_cost_june[1], 9], [stay_cost_2017_july[1], 10], [stay_cost_2017_august[1], 11] ];
+    stay_cost_3 = [ [stay_cost_2016_october[2], 1], [stay_cost_2016_november[2], 2], [stay_cost_2016_december[2], 3], [stay_cost_2017_january[2], 4],  [stay_cost_feb[2], 5], [stay_cost_march[2], 6], [stay_cost_april[2], 7], [stay_cost_may[2], 8], [stay_cost_june[2], 9], [stay_cost_2017_july[2], 10], [stay_cost_2017_august[2], 11] ];
+    stay_cost_4 = [ [stay_cost_2016_october[3], 1], [stay_cost_2016_november[3], 2], [stay_cost_2016_december[3], 3], [stay_cost_2017_january[3], 4],  [stay_cost_feb[3], 5], [stay_cost_march[3], 6], [stay_cost_april[3], 7], [stay_cost_may[3], 8], [stay_cost_june[3], 9], [stay_cost_2017_july[3], 10], [stay_cost_2017_august[3], 11] ];
+    stay_cost_5 = [ [stay_cost_2016_october[4], 1], [stay_cost_2016_november[4], 2], [stay_cost_2016_december[4], 3], [stay_cost_2017_january[4], 4],  [stay_cost_feb[4], 5], [stay_cost_march[4], 6], [stay_cost_april[4], 7], [stay_cost_may[4], 8], [stay_cost_june[4], 9], [stay_cost_2017_july[4], 10], [stay_cost_2017_august[4], 11] ];
+    stay_cost_6 = [ [stay_cost_2016_october[5], 1], [stay_cost_2016_november[5], 2], [stay_cost_2016_december[5], 3], [stay_cost_2017_january[5], 4],  [stay_cost_feb[5], 5], [stay_cost_march[5], 6], [stay_cost_april[5], 7], [stay_cost_may[5], 8], [stay_cost_june[5], 9], [stay_cost_2017_july[5], 10], [stay_cost_2017_august[5], 11] ];
+    stay_cost_7 = [ [stay_cost_2016_october[6], 1], [stay_cost_2016_november[6], 2], [stay_cost_2016_december[6], 3], [stay_cost_2017_january[6], 4],  [stay_cost_feb[6], 5], [stay_cost_march[6], 6], [stay_cost_april[6], 7], [stay_cost_may[6], 8], [stay_cost_june[6], 9], [stay_cost_2017_july[6], 10], [stay_cost_2017_august[6], 11] ];
+    stay_cost_8 = [ [stay_cost_2016_october[7], 1], [stay_cost_2016_november[7], 2], [stay_cost_2016_december[7], 3], [stay_cost_2017_january[7], 4],  [stay_cost_feb[7], 5], [stay_cost_march[7], 6], [stay_cost_april[7], 7], [stay_cost_may[7], 8], [stay_cost_june[7], 9], [stay_cost_2017_july[7], 10], [stay_cost_2017_august[7], 11] ];
+    stay_cost_9 = [ [stay_cost_2016_october[8], 1], [stay_cost_2016_november[8], 2], [stay_cost_2016_december[8], 3], [stay_cost_2017_january[8], 4],  [stay_cost_feb[8], 5], [stay_cost_march[8], 6], [stay_cost_april[8], 7], [stay_cost_may[8], 8], [stay_cost_june[8], 9], [stay_cost_2017_july[8], 10], [stay_cost_2017_august[8], 11] ];
 
-    yticks = ['2月', '3月', '4月', '5月', '6月'];
+    yticks = ['2016/10月','2016/11月','2016/12月','2017/ 1月','2017/ 2月','2017/ 3月', '2017/ 4月', '2017/ 5月', '2017/ 6月', '2017/ 7月','2017/ 8月'];
 
     var button_count = 0;
     //月別ボタンを押した
@@ -143,7 +138,7 @@ $(function(){
                 legend: {
                     show: true,
                     // placement: 'outside',
-                    location: 'e',
+                    location: 'se',
                     // location: 'e',
                     rendererOptions: {
                         numberRows: 1
