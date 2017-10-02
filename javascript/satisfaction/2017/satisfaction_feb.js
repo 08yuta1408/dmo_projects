@@ -4,7 +4,7 @@ var satisfaction_trip_feb = [0, 0, 0, 0, 0];      //旅行全体：index番号�
 
 
 $(function(){
-  $.ajax({url: 'json/data_february.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2017/data_february.json', dataType: 'json', async: false}).done(function(data){
 
     for(var i = 0; i < data.length; i++){
       if(data[i]["souvenirs satis"] == "1"){
@@ -61,18 +61,18 @@ $(function(){
     window.alert('読み込みエラー');
   });
 
-  console.log("----2月(お土産)----");
-  for(var i = 0; i < satisfaction_gift_feb.length; i++){
-    console.log(satisfaction_gift_feb[i]);
-  }
-  console.log("----2月(飲食)----");
-  for(var i = 0; i < satisfaction_eat_feb.length; i++){
-    console.log(satisfaction_eat_feb[i]);
-  }
-  console.log("----2月(旅行全体)----");
-  for(var i = 0; i < satisfaction_trip_feb.length; i++){
-    console.log(satisfaction_trip_feb[i]);
-  }
+  // console.log("----2月(お土産)----");
+  // for(var i = 0; i < satisfaction_gift_feb.length; i++){
+  //   console.log(satisfaction_gift_feb[i]);
+  // }
+  // console.log("----2月(飲食)----");
+  // for(var i = 0; i < satisfaction_eat_feb.length; i++){
+  //   console.log(satisfaction_eat_feb[i]);
+  // }
+  // console.log("----2月(旅行全体)----");
+  // for(var i = 0; i < satisfaction_trip_feb.length; i++){
+  //   console.log(satisfaction_trip_feb[i]);
+  // }
 
 
 });

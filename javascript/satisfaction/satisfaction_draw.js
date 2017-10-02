@@ -5,28 +5,28 @@ var satisfaction_trip = [0, 0, 0, 0, 0];      //旅行全体：index番号順に
 $(function(){
   //集計
   for (var i = 0; i < satisfaction_gift.length; i++) {
-    satisfaction_gift[i] = satisfaction_gift_feb[i] + satisfaction_gift_march[i] + satisfaction_gift_april[i] + satisfaction_gift_may[i] + satisfaction_gift_june[i];
+    satisfaction_gift[i] = satisfaction_gift_2016_october[i] + satisfaction_gift_2016_november[i] + satisfaction_gift_2016_december[i] + satisfaction_gift_2017_january[i] + satisfaction_gift_feb[i] + satisfaction_gift_march[i] + satisfaction_gift_april[i] + satisfaction_gift_may[i] + satisfaction_gift_june[i] + satisfaction_gift_2017_july[i] + satisfaction_gift_2017_august[i];
   }
   for (var i = 0; i < satisfaction_eat.length; i++) {
-    satisfaction_eat[i] = satisfaction_eat_feb[i] + satisfaction_eat_march[i] + satisfaction_eat_april[i] + satisfaction_eat_may[i] + satisfaction_eat_june[i];
+    satisfaction_eat[i] = satisfaction_eat_2016_october[i] + satisfaction_eat_2016_november[i] + satisfaction_eat_2016_december[i] + satisfaction_eat_2017_january[i] + satisfaction_eat_feb[i] + satisfaction_eat_march[i] + satisfaction_eat_april[i] + satisfaction_eat_may[i] + satisfaction_eat_june[i] + satisfaction_eat_2017_july[i] + satisfaction_eat_2017_august[i];
   }
   for (var i = 0; i < satisfaction_trip.length; i++) {
-    satisfaction_trip[i] = satisfaction_trip_feb[i] + satisfaction_trip_march[i] + satisfaction_trip_april[i] + satisfaction_trip_may[i] + satisfaction_trip_june[i];
+    satisfaction_trip[i] = satisfaction_trip_2016_october[i] + satisfaction_trip_2016_november[i] + satisfaction_trip_2016_december[i] + satisfaction_trip_2017_january[i] + satisfaction_trip_feb[i] + satisfaction_trip_march[i] + satisfaction_trip_april[i] + satisfaction_trip_may[i] + satisfaction_trip_june[i] + satisfaction_trip_2017_july[i] + satisfaction_trip_2017_august[i];
   }
 
   //集計結果コンソール
-  console.log("---お土産満足度----");
-  for (var i = 0; i < satisfaction_gift.length; i++) {
-    console.log(satisfaction_gift[i]);
-  }
-  console.log("---飲食満足度----");
-  for (var i = 0; i < satisfaction_eat.length; i++) {
-    console.log(satisfaction_eat[i]);
-  }
-  console.log("---旅行全体満足度----");
-  for (var i = 0; i < satisfaction_trip.length; i++) {
-    console.log(satisfaction_trip[i]);
-  }
+  // console.log("---お土産満足度----");
+  // for (var i = 0; i < satisfaction_gift.length; i++) {
+  //   console.log(satisfaction_gift[i]);
+  // }
+  // console.log("---飲食満足度----");
+  // for (var i = 0; i < satisfaction_eat.length; i++) {
+  //   console.log(satisfaction_eat[i]);
+  // }
+  // console.log("---旅行全体満足度----");
+  // for (var i = 0; i < satisfaction_trip.length; i++) {
+  //   console.log(satisfaction_trip[i]);
+  // }
 
   //デフォルトは、総数グラフ
   jQuery . jqplot(
@@ -166,25 +166,25 @@ $(function(){
     $('#satisfaction_trip_sousu').fadeIn(500);
   });
 
-  satisfaction_gift_1 = [ [satisfaction_gift_feb[0], 1], [satisfaction_gift_march[0], 2], [satisfaction_gift_april[0], 3], [satisfaction_gift_may[0], 4], [satisfaction_gift_june[0], 5] ];
-  satisfaction_gift_2 = [ [satisfaction_gift_feb[1], 1], [satisfaction_gift_march[1], 2], [satisfaction_gift_april[1], 3], [satisfaction_gift_may[1], 4], [satisfaction_gift_june[1], 5] ];
-  satisfaction_gift_3 = [ [satisfaction_gift_feb[2], 1], [satisfaction_gift_march[2], 2], [satisfaction_gift_april[2], 3], [satisfaction_gift_may[2], 4], [satisfaction_gift_june[2], 5] ];
-  satisfaction_gift_4 = [ [satisfaction_gift_feb[3], 1], [satisfaction_gift_march[3], 2], [satisfaction_gift_april[3], 3], [satisfaction_gift_may[3], 4], [satisfaction_gift_june[3], 5] ];
-  satisfaction_gift_5 = [ [satisfaction_gift_feb[4], 1], [satisfaction_gift_march[4], 2], [satisfaction_gift_april[4], 3], [satisfaction_gift_may[4], 4], [satisfaction_gift_june[4], 5] ];
+  satisfaction_gift_1 = [ [satisfaction_gift_2016_october[0], 1], [satisfaction_gift_2016_november[0], 2], [satisfaction_gift_2016_december[0], 3], [satisfaction_gift_2017_january[0], 4], [satisfaction_gift_feb[0], 5], [satisfaction_gift_march[0], 6], [satisfaction_gift_april[0], 7], [satisfaction_gift_may[0], 8], [satisfaction_gift_june[0], 9], [satisfaction_gift_2017_july[0], 10], [satisfaction_gift_2017_august[0], 11] ];
+  satisfaction_gift_2 = [ [satisfaction_gift_2016_october[1], 1], [satisfaction_gift_2016_november[1], 2], [satisfaction_gift_2016_december[1], 3], [satisfaction_gift_2017_january[1], 4], [satisfaction_gift_feb[1], 5], [satisfaction_gift_march[1], 6], [satisfaction_gift_april[1], 7], [satisfaction_gift_may[1], 8], [satisfaction_gift_june[1], 9], [satisfaction_gift_2017_july[1], 10], [satisfaction_gift_2017_august[1], 11] ];
+  satisfaction_gift_3 = [ [satisfaction_gift_2016_october[2], 1], [satisfaction_gift_2016_november[2], 2], [satisfaction_gift_2016_december[2], 3], [satisfaction_gift_2017_january[2], 4], [satisfaction_gift_feb[2], 5], [satisfaction_gift_march[2], 6], [satisfaction_gift_april[2], 7], [satisfaction_gift_may[2], 8], [satisfaction_gift_june[2], 9], [satisfaction_gift_2017_july[2], 10], [satisfaction_gift_2017_august[2], 11] ];
+  satisfaction_gift_4 = [ [satisfaction_gift_2016_october[3], 1], [satisfaction_gift_2016_november[3], 2], [satisfaction_gift_2016_december[3], 3], [satisfaction_gift_2017_january[3], 4], [satisfaction_gift_feb[3], 5], [satisfaction_gift_march[3], 6], [satisfaction_gift_april[3], 7], [satisfaction_gift_may[3], 8], [satisfaction_gift_june[3], 9], [satisfaction_gift_2017_july[3], 10], [satisfaction_gift_2017_august[3], 11] ];
+  satisfaction_gift_5 = [ [satisfaction_gift_2016_october[4], 1], [satisfaction_gift_2016_november[4], 2], [satisfaction_gift_2016_december[4], 3], [satisfaction_gift_2017_january[4], 4], [satisfaction_gift_feb[4], 5], [satisfaction_gift_march[4], 6], [satisfaction_gift_april[4], 7], [satisfaction_gift_may[4], 8], [satisfaction_gift_june[4], 9], [satisfaction_gift_2017_july[4], 10], [satisfaction_gift_2017_august[4], 11] ];
 
-  satisfaction_eat_1 = [ [satisfaction_eat_feb[0], 1], [satisfaction_eat_march[0], 2], [satisfaction_eat_april[0], 3], [satisfaction_eat_may[0], 4], [satisfaction_eat_june[0], 5] ];
-  satisfaction_eat_2 = [ [satisfaction_eat_feb[1], 1], [satisfaction_eat_march[1], 2], [satisfaction_eat_april[1], 3], [satisfaction_eat_may[1], 4], [satisfaction_eat_june[1], 5] ];
-  satisfaction_eat_3 = [ [satisfaction_eat_feb[2], 1], [satisfaction_eat_march[2], 2], [satisfaction_eat_april[2], 3], [satisfaction_eat_may[2], 4], [satisfaction_eat_june[2], 5] ];
-  satisfaction_eat_4 = [ [satisfaction_eat_feb[3], 1], [satisfaction_eat_march[3], 2], [satisfaction_eat_april[3], 3], [satisfaction_eat_may[3], 4], [satisfaction_eat_june[3], 5] ];
-  satisfaction_eat_5 = [ [satisfaction_eat_feb[4], 1], [satisfaction_eat_march[4], 2], [satisfaction_eat_april[4], 3], [satisfaction_eat_may[4], 4], [satisfaction_eat_june[4], 5] ];
+  satisfaction_eat_1 = [ [satisfaction_eat_2016_october[0], 1], [satisfaction_eat_2016_november[0], 2], [satisfaction_eat_2016_december[0], 3], [satisfaction_eat_2017_january[0], 4], [satisfaction_eat_feb[0], 5], [satisfaction_eat_march[0], 6], [satisfaction_eat_april[0], 7], [satisfaction_eat_may[0], 8], [satisfaction_eat_june[0], 9], [satisfaction_eat_2017_july[0], 10], [satisfaction_eat_2017_august[0], 11] ];
+  satisfaction_eat_2 = [ [satisfaction_eat_2016_october[1], 1], [satisfaction_eat_2016_november[1], 2], [satisfaction_eat_2016_december[1], 3], [satisfaction_eat_2017_january[1], 4], [satisfaction_eat_feb[1], 5], [satisfaction_eat_march[1], 6], [satisfaction_eat_april[1], 7], [satisfaction_eat_may[1], 8], [satisfaction_eat_june[1], 9], [satisfaction_eat_2017_july[1], 10], [satisfaction_eat_2017_august[1], 11] ];
+  satisfaction_eat_3 = [ [satisfaction_eat_2016_october[2], 1], [satisfaction_eat_2016_november[2], 2], [satisfaction_eat_2016_december[2], 3], [satisfaction_eat_2017_january[2], 4], [satisfaction_eat_feb[2], 5], [satisfaction_eat_march[2], 6], [satisfaction_eat_april[2], 7], [satisfaction_eat_may[2], 8], [satisfaction_eat_june[2], 9], [satisfaction_eat_2017_july[2], 10], [satisfaction_eat_2017_august[2], 11] ];
+  satisfaction_eat_4 = [ [satisfaction_eat_2016_october[3], 1], [satisfaction_eat_2016_november[3], 2], [satisfaction_eat_2016_december[3], 3], [satisfaction_eat_2017_january[3], 4], [satisfaction_eat_feb[3], 5], [satisfaction_eat_march[3], 6], [satisfaction_eat_april[3], 7], [satisfaction_eat_may[3], 8], [satisfaction_eat_june[3], 9], [satisfaction_eat_2017_july[3], 10], [satisfaction_eat_2017_august[3], 11] ];
+  satisfaction_eat_5 = [ [satisfaction_eat_2016_october[4], 1], [satisfaction_eat_2016_november[4], 2], [satisfaction_eat_2016_december[4], 3], [satisfaction_eat_2017_january[4], 4], [satisfaction_eat_feb[4], 5], [satisfaction_eat_march[4], 6], [satisfaction_eat_april[4], 7], [satisfaction_eat_may[4], 8], [satisfaction_eat_june[4], 9], [satisfaction_eat_2017_july[4], 10], [satisfaction_eat_2017_august[4], 11] ];
 
-  satisfaction_trip_1 = [ [satisfaction_trip_feb[0], 1], [satisfaction_trip_march[0], 2], [satisfaction_trip_april[0], 3], [satisfaction_trip_may[0], 4], [satisfaction_trip_june[0], 5] ];
-  satisfaction_trip_2 = [ [satisfaction_trip_feb[1], 1], [satisfaction_trip_march[1], 2], [satisfaction_trip_april[1], 3], [satisfaction_trip_may[1], 4], [satisfaction_trip_june[1], 5] ];
-  satisfaction_trip_3 = [ [satisfaction_trip_feb[2], 1], [satisfaction_trip_march[2], 2], [satisfaction_trip_april[2], 3], [satisfaction_trip_may[2], 4], [satisfaction_trip_june[2], 5] ];
-  satisfaction_trip_4 = [ [satisfaction_trip_feb[3], 1], [satisfaction_trip_march[3], 2], [satisfaction_trip_april[3], 3], [satisfaction_trip_may[3], 4], [satisfaction_trip_june[3], 5] ];
-  satisfaction_trip_5 = [ [satisfaction_trip_feb[4], 1], [satisfaction_trip_march[4], 2], [satisfaction_trip_april[4], 3], [satisfaction_trip_may[4], 4], [satisfaction_trip_june[4], 5] ];
+  satisfaction_trip_1 = [ [satisfaction_trip_2016_october[0], 1], [satisfaction_trip_2016_november[0], 2], [satisfaction_trip_2016_december[0], 3], [satisfaction_trip_2017_january[0], 4], [satisfaction_trip_feb[0], 5], [satisfaction_trip_march[0], 6], [satisfaction_trip_april[0], 7], [satisfaction_trip_may[0], 8], [satisfaction_trip_june[0], 9], [satisfaction_trip_2017_july[0], 10], [satisfaction_trip_2017_august[0], 11] ];
+  satisfaction_trip_2 = [ [satisfaction_trip_2016_october[1], 1], [satisfaction_trip_2016_november[1], 2], [satisfaction_trip_2016_december[1], 3], [satisfaction_trip_2017_january[1], 4], [satisfaction_trip_feb[1], 5], [satisfaction_trip_march[1], 6], [satisfaction_trip_april[1], 7], [satisfaction_trip_may[1], 8], [satisfaction_trip_june[1], 9], [satisfaction_trip_2017_july[1], 10], [satisfaction_trip_2017_august[1], 11] ];
+  satisfaction_trip_3 = [ [satisfaction_trip_2016_october[2], 1], [satisfaction_trip_2016_november[2], 2], [satisfaction_trip_2016_december[2], 3], [satisfaction_trip_2017_january[2], 4], [satisfaction_trip_feb[2], 5], [satisfaction_trip_march[2], 6], [satisfaction_trip_april[2], 7], [satisfaction_trip_may[2], 8], [satisfaction_trip_june[2], 9], [satisfaction_trip_2017_july[2], 10], [satisfaction_trip_2017_august[2], 11] ];
+  satisfaction_trip_4 = [ [satisfaction_trip_2016_october[3], 1], [satisfaction_trip_2016_november[3], 2], [satisfaction_trip_2016_december[3], 3], [satisfaction_trip_2017_january[3], 4], [satisfaction_trip_feb[3], 5], [satisfaction_trip_march[3], 6], [satisfaction_trip_april[3], 7], [satisfaction_trip_may[3], 8], [satisfaction_trip_june[3], 9], [satisfaction_trip_2017_july[3], 10], [satisfaction_trip_2017_august[3], 11] ];
+  satisfaction_trip_5 = [ [satisfaction_trip_2016_october[4], 1], [satisfaction_trip_2016_november[4], 2], [satisfaction_trip_2016_december[4], 3], [satisfaction_trip_2017_january[4], 4], [satisfaction_trip_feb[4], 5], [satisfaction_trip_march[4], 6], [satisfaction_trip_april[4], 7], [satisfaction_trip_may[4], 8], [satisfaction_trip_june[4], 9], [satisfaction_trip_2017_july[4], 10], [satisfaction_trip_2017_august[4], 11] ];
 
-  yticks = ['2月', '3月', '4月', '5月', '6月'];
+  yticks = ['2016/10月','2016/11月','2016/12月','2017/ 1月','2017/ 2月','2017/ 3月', '2017/ 4月', '2017/ 5月', '2017/ 6月', '2017/ 7月','2017/ 8月'];
 
   var button_count = 0;
   //月別ボタンを押した
