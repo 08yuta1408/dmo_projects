@@ -16,7 +16,7 @@ var resident_frequency_march_toyama = [0, 0, 0, 0, 0, 0, 0];    //index番号順
 var resident_frequency_march_others = [0, 0, 0, 0, 0, 0, 0];    //index番号順に、毎月1回程度、年に4回以上、年に２〜3回程度、年に1回程度、2年に1回程度、3年に1回程度、それ以下
 
 $(function(){
-  $.ajax({url: 'json/data_march.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2017/data_march.json', dataType: 'json', async: false}).done(function(data){
 
     for(var i = 0; i < data.length; i++){
       switch (parseInt(data[i]["from"])){
