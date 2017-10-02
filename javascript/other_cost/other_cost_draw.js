@@ -3,13 +3,13 @@ $(function(){
 
   //全ての月別結果を代入する
   for (var i = 0; i < other_cost.length; i++) {
-    other_cost[i] = other_cost_feb[i] + other_cost_march[i] + other_cost_april[i] + other_cost_may[i] +  other_cost_june[i];
+    other_cost[i] = other_cost_2016_october[i] +  other_cost_2016_november[i] +  other_cost_2016_december[i] +  other_cost_2017_january[i] + other_cost_feb[i] + other_cost_march[i] + other_cost_april[i] + other_cost_may[i] +  other_cost_june[i] + other_cost_2017_july[i] +  other_cost_2017_august[i];
   }
 
-  console.log("集計 2~6月 その他観光費");
-  for (var i = 0; i < other_cost.length; i++) {
-    console.log(other_cost[i]);
-  }
+  // console.log("集計 2~6月 その他観光費");
+  // for (var i = 0; i < other_cost.length; i++) {
+  //   console.log(other_cost[i]);
+  // }
 
   //デフォルトは、総数グラフ
   jQuery . jqplot(
@@ -63,14 +63,14 @@ $(function(){
       $('#other_cost_sousu').fadeIn(500);
     });
 
-    other_cost_1 = [ [other_cost_feb[0], 1], [other_cost_march[0], 2], [other_cost_april[0], 3], [other_cost_may[0], 4], [other_cost_june[0], 5] ];
-    other_cost_2 = [ [other_cost_feb[1], 1], [other_cost_march[1], 2], [other_cost_april[1], 3], [other_cost_may[1], 4], [other_cost_june[1], 5] ];
-    other_cost_3 = [ [other_cost_feb[2], 1], [other_cost_march[2], 2], [other_cost_april[2], 3], [other_cost_may[2], 4], [other_cost_june[2], 5] ];
-    other_cost_4 = [ [other_cost_feb[3], 1], [other_cost_march[3], 2], [other_cost_april[3], 3], [other_cost_may[3], 4], [other_cost_june[3], 5] ];
-    other_cost_5= [ [other_cost_feb[4], 1], [other_cost_march[4], 2], [other_cost_april[4], 3], [other_cost_may[4], 4], [other_cost_june[4], 5] ];
-    other_cost_6 = [ [other_cost_feb[5], 1], [other_cost_march[5], 2], [other_cost_april[5], 3], [other_cost_may[5], 4], [other_cost_june[5], 5] ];
+    other_cost_1 = [ [other_cost_2016_october[0], 1], [other_cost_2016_november[0], 2], [other_cost_2016_december[0], 3], [other_cost_2017_january[0], 4], [other_cost_feb[0], 5], [other_cost_march[0], 6], [other_cost_april[0], 7], [other_cost_may[0], 8], [other_cost_june[0], 9], [other_cost_2017_july[0], 10], [other_cost_2017_august[0], 11] ];
+    other_cost_2 = [ [other_cost_2016_october[1], 1], [other_cost_2016_november[1], 2], [other_cost_2016_december[1], 3], [other_cost_2017_january[1], 4], [other_cost_feb[1], 5], [other_cost_march[1], 6], [other_cost_april[1], 7], [other_cost_may[1], 8], [other_cost_june[1], 9], [other_cost_2017_july[1], 10], [other_cost_2017_august[1], 11] ];
+    other_cost_3 = [ [other_cost_2016_october[2], 1], [other_cost_2016_november[2], 2], [other_cost_2016_december[2], 3], [other_cost_2017_january[2], 4], [other_cost_feb[2], 5], [other_cost_march[2], 6], [other_cost_april[2], 7], [other_cost_may[2], 8], [other_cost_june[2], 9], [other_cost_2017_july[2], 10], [other_cost_2017_august[2], 11] ];
+    other_cost_4 = [ [other_cost_2016_october[3], 1], [other_cost_2016_november[3], 2], [other_cost_2016_december[3], 3], [other_cost_2017_january[3], 4], [other_cost_feb[3], 5], [other_cost_march[3], 6], [other_cost_april[3], 7], [other_cost_may[3], 8], [other_cost_june[3], 9], [other_cost_2017_july[3], 10], [other_cost_2017_august[3], 11] ];
+    other_cost_5 = [ [other_cost_2016_october[4], 1], [other_cost_2016_november[4], 2], [other_cost_2016_december[4], 3], [other_cost_2017_january[4], 4], [other_cost_feb[4], 5], [other_cost_march[4], 6], [other_cost_april[4], 7], [other_cost_may[4], 8], [other_cost_june[4], 9], [other_cost_2017_july[4], 10], [other_cost_2017_august[4], 11] ];
+    other_cost_6 = [ [other_cost_2016_october[5], 1], [other_cost_2016_november[5], 2], [other_cost_2016_december[5], 3], [other_cost_2017_january[5], 4], [other_cost_feb[5], 5], [other_cost_march[5], 6], [other_cost_april[5], 7], [other_cost_may[5], 8], [other_cost_june[5], 9], [other_cost_2017_july[5], 10], [other_cost_2017_august[5], 11] ];
 
-    yticks = ['2月', '3月', '4月', '5月', '6月'];
+    yticks = ['2016/10月','2016/11月','2016/12月','2017/ 1月','2017/ 2月','2017/ 3月', '2017/ 4月', '2017/ 5月', '2017/ 6月', '2017/ 7月','2017/ 8月'];
 
     var button_count = 0;
     //月別ボタンを押した
