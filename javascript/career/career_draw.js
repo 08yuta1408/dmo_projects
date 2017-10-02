@@ -5,7 +5,7 @@ $(function(){
 
   //career_allに全ての月別結果を代入する
   for (var i = 0; i < career_all.length; i++) {
-      career_all[i] = career_2016_october[i] + career_2016_november[i] + career_2016_december[i] + career_feb[i] + career_march[i] + career_april[i] + career_may[i] +  career_june[i] + career_2017_july[i] +  career_2017_august[i];
+      career_all[i] = career_2016_october[i] + career_2016_november[i] + career_2016_december[i] + career_2017_january[i] + career_feb[i] + career_march[i] + career_april[i] + career_may[i] +  career_june[i] + career_2017_july[i] +  career_2017_august[i];
   }
 
   //母数の計算
