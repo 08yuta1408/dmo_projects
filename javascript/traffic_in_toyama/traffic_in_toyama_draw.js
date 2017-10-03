@@ -3,12 +3,7 @@ $(function(){
 
   //集計
   for (var i = 0; i < traffic_in_toyama.length; i++) {
-    traffic_in_toyama[i] = traffic_in_toyama_march[i] + traffic_in_toyama_april[i] + traffic_in_toyama_may[i] + traffic_in_toyama_june[i];
-  }
-
-  console.log("集計結果");
-  for (var i = 0; i < traffic_in_toyama.length; i++) {
-    console.log(traffic_in_toyama[i]);
+    traffic_in_toyama[i] = traffic_in_toyama_2017_january[i] + traffic_in_toyama_feb[i] + traffic_in_toyama_march[i] + traffic_in_toyama_april[i] + traffic_in_toyama_may[i] +  traffic_in_toyama_june[i] + traffic_in_toyama_2017_july[i] + traffic_in_toyama_2017_august[i];
   }
 
   //デフォルトは、総数グラフ
@@ -66,15 +61,15 @@ $(function(){
       $('#traffic_in_toyama_sousu').fadeIn(500);
     });
 
-    traffic_in_toyama_1 = [ [traffic_in_toyama_march[0], 1], [traffic_in_toyama_april[0], 2], [traffic_in_toyama_may[0], 3], [traffic_in_toyama_june[0], 4] ];
-    traffic_in_toyama_2 = [ [traffic_in_toyama_march[1], 1], [traffic_in_toyama_april[1], 2], [traffic_in_toyama_may[1], 3], [traffic_in_toyama_june[1], 4] ];
-    traffic_in_toyama_3 = [ [traffic_in_toyama_march[2], 1], [traffic_in_toyama_april[2], 2], [traffic_in_toyama_may[2], 3], [traffic_in_toyama_june[2], 4] ];
-    traffic_in_toyama_4 = [ [traffic_in_toyama_march[3], 1], [traffic_in_toyama_april[3], 2], [traffic_in_toyama_may[3], 3], [traffic_in_toyama_june[3], 4] ];
-    traffic_in_toyama_5 = [ [traffic_in_toyama_march[4], 1], [traffic_in_toyama_april[4], 2], [traffic_in_toyama_may[4], 3], [traffic_in_toyama_june[4], 4] ];
-    traffic_in_toyama_6 = [ [traffic_in_toyama_march[5], 1], [traffic_in_toyama_april[5], 2], [traffic_in_toyama_may[5], 3], [traffic_in_toyama_june[5], 4] ];
-    traffic_in_toyama_7 = [ [traffic_in_toyama_march[6], 1], [traffic_in_toyama_april[6], 2], [traffic_in_toyama_may[6], 3], [traffic_in_toyama_june[6], 4] ];
+    traffic_in_toyama_1 = [ [traffic_in_toyama_2017_january[0], 1], [traffic_in_toyama_feb[0], 2], [traffic_in_toyama_march[0], 3], [traffic_in_toyama_april[0], 4], [traffic_in_toyama_may[0], 5], [traffic_in_toyama_june[0], 6], [traffic_in_toyama_2017_july[0], 7], [traffic_in_toyama_2017_august[0], 8]];
+    traffic_in_toyama_2 = [ [traffic_in_toyama_2017_january[1], 1], [traffic_in_toyama_feb[1], 2], [traffic_in_toyama_march[1], 3], [traffic_in_toyama_april[1], 4], [traffic_in_toyama_may[1], 5], [traffic_in_toyama_june[1], 6], [traffic_in_toyama_2017_july[1], 7], [traffic_in_toyama_2017_august[1], 8]];
+    traffic_in_toyama_3 = [ [traffic_in_toyama_2017_january[2], 1], [traffic_in_toyama_feb[2], 2], [traffic_in_toyama_march[2], 3], [traffic_in_toyama_april[2], 4], [traffic_in_toyama_may[2], 5], [traffic_in_toyama_june[2], 6], [traffic_in_toyama_2017_july[2], 7], [traffic_in_toyama_2017_august[2], 8]];
+    traffic_in_toyama_4 = [ [traffic_in_toyama_2017_january[3], 1], [traffic_in_toyama_feb[3], 2], [traffic_in_toyama_march[3], 3], [traffic_in_toyama_april[3], 4], [traffic_in_toyama_may[3], 5], [traffic_in_toyama_june[3], 6], [traffic_in_toyama_2017_july[3], 7], [traffic_in_toyama_2017_august[3], 8]];
+    traffic_in_toyama_5 = [ [traffic_in_toyama_2017_january[4], 1], [traffic_in_toyama_feb[4], 2], [traffic_in_toyama_march[4], 3], [traffic_in_toyama_april[4], 4], [traffic_in_toyama_may[4], 5], [traffic_in_toyama_june[4], 6], [traffic_in_toyama_2017_july[4], 7], [traffic_in_toyama_2017_august[4], 8]];
+    traffic_in_toyama_6 = [ [traffic_in_toyama_2017_january[5], 1], [traffic_in_toyama_feb[5], 2], [traffic_in_toyama_march[5], 3], [traffic_in_toyama_april[5], 4], [traffic_in_toyama_may[5], 5], [traffic_in_toyama_june[5], 6], [traffic_in_toyama_2017_july[5], 7], [traffic_in_toyama_2017_august[5], 8]];
+    traffic_in_toyama_7 = [ [traffic_in_toyama_2017_january[6], 1], [traffic_in_toyama_feb[6], 2], [traffic_in_toyama_march[6], 3], [traffic_in_toyama_april[6], 4], [traffic_in_toyama_may[6], 5], [traffic_in_toyama_june[6], 6], [traffic_in_toyama_2017_july[6], 7], [traffic_in_toyama_2017_august[6], 8]];
 
-    yticks = ['3月', '4月', '5月', '6月'];
+    yticks = ['2017/ 1月', '2017/ 2月', '2017/ 3月', '2017/ 4月', '2017/ 5月', '2017/ 6月', '2017/ 7月', '2017/ 8月'];
 
     var button_count = 0;
     //月別ボタンを押した
@@ -137,7 +132,7 @@ $(function(){
                 legend: {
                     show: true,
                     // placement: 'outside',
-                    location: 'e',
+                    location: 'se',
                     // location: 'e',
                     rendererOptions: {
                         numberRows: 1

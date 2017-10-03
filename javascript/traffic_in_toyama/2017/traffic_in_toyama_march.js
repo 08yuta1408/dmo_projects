@@ -5,7 +5,7 @@ var traffic_array_march = [];
 
 
 $(function(){
-  $.ajax({url: 'json/data_march.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2017/data_march.json', dataType: 'json', async: false}).done(function(data){
     for(var i = 0; i < data.length; i++){
       //初期化
       traffic_string_march = data[i]["trans in toyama"];
