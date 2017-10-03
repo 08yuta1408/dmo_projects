@@ -3,12 +3,7 @@ $(function(){
 
   //集計
   for (var i = 0; i < traffic_to_toyama.length; i++) {
-    traffic_to_toyama[i] = traffic_to_toyama_feb[i] + traffic_to_toyama_march[i] + traffic_to_toyama_april[i] + traffic_to_toyama_may[i] + traffic_to_toyama_june[i];
-  }
-
-  console.log("集計結果");
-  for (var i = 0; i < traffic_to_toyama.length; i++) {
-    console.log(traffic_to_toyama[i]);
+    traffic_to_toyama[i] = traffic_to_toyama_2016_october[i] + traffic_to_toyama_2016_november[i] + traffic_to_toyama_2016_december[i] + traffic_to_toyama_2017_january[i] + traffic_to_toyama_feb[i] + traffic_to_toyama_march[i] + traffic_to_toyama_april[i] + traffic_to_toyama_may[i] +  traffic_to_toyama_june[i] + traffic_to_toyama_2017_july[i] + traffic_to_toyama_2017_august[i];
   }
 
   //デフォルトは、総数グラフ
@@ -40,7 +35,7 @@ $(function(){
                 textColor: 'black',
             },
 
-            seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#F6CED8'],
+            seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#D8D8D8'],
 
             seriesDefaults: {
                 renderer: jQuery . jqplot . PieRenderer,
@@ -66,15 +61,16 @@ $(function(){
       $('#traffic_to_toyama_sousu').fadeIn(500);
     });
 
-    traffic_to_toyama_1 = [ [traffic_to_toyama_feb[0], 1], [traffic_to_toyama_march[0], 2], [traffic_to_toyama_april[0], 3], [traffic_to_toyama_may[0], 4], [traffic_to_toyama_june[0], 5] ];
-    traffic_to_toyama_2 = [ [traffic_to_toyama_feb[1], 1], [traffic_to_toyama_march[1], 2], [traffic_to_toyama_april[1], 3], [traffic_to_toyama_may[1], 4], [traffic_to_toyama_june[1], 5] ];
-    traffic_to_toyama_3 = [ [traffic_to_toyama_feb[2], 1], [traffic_to_toyama_march[2], 2], [traffic_to_toyama_april[2], 3], [traffic_to_toyama_may[2], 4], [traffic_to_toyama_june[2], 5] ];
-    traffic_to_toyama_4 = [ [traffic_to_toyama_feb[3], 1], [traffic_to_toyama_march[3], 2], [traffic_to_toyama_april[3], 3], [traffic_to_toyama_may[3], 4], [traffic_to_toyama_june[3], 5] ];
-    traffic_to_toyama_5 = [ [traffic_to_toyama_feb[4], 1], [traffic_to_toyama_march[4], 2], [traffic_to_toyama_april[4], 3], [traffic_to_toyama_may[4], 4], [traffic_to_toyama_june[4], 5] ];
-    traffic_to_toyama_6 = [ [traffic_to_toyama_feb[5], 1], [traffic_to_toyama_march[5], 2], [traffic_to_toyama_april[5], 3], [traffic_to_toyama_may[5], 4], [traffic_to_toyama_june[5], 5] ];
-    traffic_to_toyama_7 = [ [traffic_to_toyama_feb[6], 1], [traffic_to_toyama_march[6], 2], [traffic_to_toyama_april[6], 3], [traffic_to_toyama_may[6], 4], [traffic_to_toyama_june[6], 5] ];
-    traffic_to_toyama_8 = [ [traffic_to_toyama_feb[7], 1], [traffic_to_toyama_march[7], 2], [traffic_to_toyama_april[7], 3], [traffic_to_toyama_may[7], 4], [traffic_to_toyama_june[7], 5] ];
-    yticks = ['2月', '3月', '4月', '5月', '6月'];
+    traffic_to_toyama_1 = [ [traffic_to_toyama_2016_october[0], 1], [traffic_to_toyama_2016_november[0], 2], [traffic_to_toyama_2016_december[0], 3], [traffic_to_toyama_2017_january[0], 4], [traffic_to_toyama_feb[0], 5], [traffic_to_toyama_march[0], 6], [traffic_to_toyama_april[0], 7], [traffic_to_toyama_may[0], 8], [traffic_to_toyama_june[0], 9], [traffic_to_toyama_2017_july[0], 10], [traffic_to_toyama_2017_august[0], 11] ];
+    traffic_to_toyama_2 = [ [traffic_to_toyama_2016_october[1], 1], [traffic_to_toyama_2016_november[1], 2], [traffic_to_toyama_2016_december[1], 3], [traffic_to_toyama_2017_january[1], 4], [traffic_to_toyama_feb[1], 5], [traffic_to_toyama_march[1], 6], [traffic_to_toyama_april[1], 7], [traffic_to_toyama_may[1], 8], [traffic_to_toyama_june[1], 9], [traffic_to_toyama_2017_july[1], 10], [traffic_to_toyama_2017_august[1], 11] ];
+    traffic_to_toyama_3 = [ [traffic_to_toyama_2016_october[2], 1], [traffic_to_toyama_2016_november[2], 2], [traffic_to_toyama_2016_december[2], 3], [traffic_to_toyama_2017_january[2], 4], [traffic_to_toyama_feb[2], 5], [traffic_to_toyama_march[2], 6], [traffic_to_toyama_april[2], 7], [traffic_to_toyama_may[2], 8], [traffic_to_toyama_june[2], 9], [traffic_to_toyama_2017_july[2], 10], [traffic_to_toyama_2017_august[2], 11] ];
+    traffic_to_toyama_4 = [ [traffic_to_toyama_2016_october[3], 1], [traffic_to_toyama_2016_november[3], 2], [traffic_to_toyama_2016_december[3], 3], [traffic_to_toyama_2017_january[3], 4], [traffic_to_toyama_feb[3], 5], [traffic_to_toyama_march[3], 6], [traffic_to_toyama_april[3], 7], [traffic_to_toyama_may[3], 8], [traffic_to_toyama_june[3], 9], [traffic_to_toyama_2017_july[3], 10], [traffic_to_toyama_2017_august[3], 11] ];
+    traffic_to_toyama_5 = [ [traffic_to_toyama_2016_october[4], 1], [traffic_to_toyama_2016_november[4], 2], [traffic_to_toyama_2016_december[4], 3], [traffic_to_toyama_2017_january[4], 4], [traffic_to_toyama_feb[4], 5], [traffic_to_toyama_march[4], 6], [traffic_to_toyama_april[4], 7], [traffic_to_toyama_may[4], 8], [traffic_to_toyama_june[4], 9], [traffic_to_toyama_2017_july[4], 10], [traffic_to_toyama_2017_august[4], 11] ];
+    traffic_to_toyama_6 = [ [traffic_to_toyama_2016_october[5], 1], [traffic_to_toyama_2016_november[5], 2], [traffic_to_toyama_2016_december[5], 3], [traffic_to_toyama_2017_january[5], 4], [traffic_to_toyama_feb[5], 5], [traffic_to_toyama_march[5], 6], [traffic_to_toyama_april[5], 7], [traffic_to_toyama_may[5], 8], [traffic_to_toyama_june[5], 9], [traffic_to_toyama_2017_july[5], 10], [traffic_to_toyama_2017_august[5], 11] ];
+    traffic_to_toyama_7 = [ [traffic_to_toyama_2016_october[6], 1], [traffic_to_toyama_2016_november[6], 2], [traffic_to_toyama_2016_december[6], 3], [traffic_to_toyama_2017_january[6], 4], [traffic_to_toyama_feb[6], 5], [traffic_to_toyama_march[6], 6], [traffic_to_toyama_april[6], 7], [traffic_to_toyama_may[6], 8], [traffic_to_toyama_june[6], 9], [traffic_to_toyama_2017_july[6], 10], [traffic_to_toyama_2017_august[6], 11] ];
+    traffic_to_toyama_8 = [ [traffic_to_toyama_2016_october[7], 1], [traffic_to_toyama_2016_november[7], 2], [traffic_to_toyama_2016_december[7], 3], [traffic_to_toyama_2017_january[7], 4], [traffic_to_toyama_feb[7], 5], [traffic_to_toyama_march[7], 6], [traffic_to_toyama_april[7], 7], [traffic_to_toyama_may[7], 8], [traffic_to_toyama_june[7], 9], [traffic_to_toyama_2017_july[7], 10], [traffic_to_toyama_2017_august[7], 11] ];
+
+    yticks = ['2016/10月', '2016/11月', '2016/12月', '2017/ 1月', '2017/ 2月', '2017/ 3月', '2017/ 4月', '2017/ 5月', '2017/ 6月', '2017/ 7月', '2017/ 8月'];
 
     var button_count = 0;
     //月別ボタンを押した
@@ -102,7 +98,7 @@ $(function(){
 
                 stackSeries: true,
 
-                seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#F6CED8'],
+                seriesColors:[ '#F6D8CE', '#F2F5A9', '#D0F5A9', '#81F79F', '#81F7F3', '#9F81F7', '#F5A9D0', '#D8D8D8'],
 
                 seriesDefaults: {
                     renderer: jQuery . jqplot . BarRenderer,

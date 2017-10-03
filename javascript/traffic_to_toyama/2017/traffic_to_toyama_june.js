@@ -5,7 +5,7 @@ var traffic_array_june = [];
 
 
 $(function(){
-  $.ajax({url: 'json/data_june.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2017/data_june.json', dataType: 'json', async: false}).done(function(data){
     for(var i = 0; i < data.length; i++){
       //初期化
       traffic_string_june = data[i]["trans home to toyama"];

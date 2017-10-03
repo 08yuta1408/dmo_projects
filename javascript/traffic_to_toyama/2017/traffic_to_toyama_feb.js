@@ -5,7 +5,7 @@ var traffic_array_feb = [];
 
 
 $(function(){
-  $.ajax({url: 'json/data_february.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2017/data_february.json', dataType: 'json', async: false}).done(function(data){
     for(var i = 0; i < data.length; i++){
       //初期化
       traffic_string_feb = data[i]["trans home to toyama"];
@@ -42,9 +42,9 @@ $(function(){
     window.alert('読み込みエラー');
   });
 
-  console.log("----2月----");
-  for(var i = 0; i < traffic_to_toyama_feb.length; i++){
-    console.log(traffic_to_toyama_feb[i]);
-  }
+  // console.log("----2月----");
+  // for(var i = 0; i < traffic_to_toyama_feb.length; i++){
+  //   console.log(traffic_to_toyama_feb[i]);
+  // }
 
 });
