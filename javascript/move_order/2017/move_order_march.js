@@ -9,7 +9,7 @@ $(function(){
   var x;
   var y;
 
-  $.ajax({url: 'json/data_move_march.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/move_2017/data_move_march.json', dataType: 'json', async: false}).done(function(data){
 
     for(var i = 0; i < data.length; i++){
       var positions_march = [];
@@ -136,5 +136,5 @@ $(function(){
   //   }
   // }
 
-  
+
 });

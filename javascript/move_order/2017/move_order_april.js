@@ -6,7 +6,7 @@ for(let y = 0; y < 37 + 1; y++) {
 }
 
 $(function(){
-  $.ajax({url: 'json/data_move_april.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/move_2017/data_move_april.json', dataType: 'json', async: false}).done(function(data){
 
     for(var i = 0; i < data.length; i++){
       var positions_april = [];
