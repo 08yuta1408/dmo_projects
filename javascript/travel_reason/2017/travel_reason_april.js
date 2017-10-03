@@ -27,7 +27,7 @@ var reason_other_string_april = "";
 var reason_other_array_april = [];
 
 $(function(){
-  $.ajax({url: 'json/data_april.json', dataType: 'json', async: false}).done(function(data){
+  $.ajax({url: 'json/2017/data_april.json', dataType: 'json', async: false}).done(function(data){
     for(var i = 0; i < data.length; i++){
       //初期化
       reason_see_string_april = data[i]["reason see"];
