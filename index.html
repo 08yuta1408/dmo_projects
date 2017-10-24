@@ -5,171 +5,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>DMO観光動態調査</title>
-    <link rel="stylesheet" href="css/index2.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/index2.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
 
   <body>
     <header>
       <div class="container">
-        <div class="header-left">
-          <h2>DMO観光動態調査</h2>
-        </div>
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <h2>DMO観光動態調査</h2>
+          </div>
 
-        <div class="header-right">
-          <ul>
-            <li><a href="index.html"><span class="fa fa-home"></span>ホーム</a></li>
-            <li><a href="member.html"><span class="fa fa-user"></span>メンバー</a></li>
-            <!-- <li><a href="#"><span class="fa fa-question"></span>お問い合わせ</a></li> -->
-          </ul>
+          <div class="col-md-4 col-xs-12 col-md-offset-4 h-right">
+            <ul class="row">
+              <li class="col-md-6 col-xs-6 text-center"><a href="index.html"><span class="fa fa-home"></span>ホーム</a></li>
+              <li class="col-md-6 col-xs-6 text-center"><a href="member.html"><span class="fa fa-user"></span>メンバー</a></li>
+              <!-- <li><a href="#"><span class="fa fa-question"></span>お問い合わせ</a></li> -->
+              </ul>
+          </div>
         </div>
       </div>
-    </header>
-
+    </header> 
     <div class="message-wrapper">
-        <div class="toyama-message">
-          <h3>研究目的</h3>
-          <p>私たちは、富山県を訪れた人にアンケート調査を実施し、それらから得たデータをもとにデータの可視化を行いました。</p>
-          <p>データの可視化により、今後富山県がどのような施策をとっていくべきかを検討します。</p>
-          <p>現時点で用いたデータは、平成28年10月〜平成29年8月のデータを用いています。</p>
-          <p>ただし、富山県での交通手段に関するグラフのデータは平成29年1月〜平成29年8月のデータを用いています。</p>
+      <div class="container">
+          <div class="toyama-message">
+            <h3 class="col-xs-12">研究目的</h3>
+            <p>私たちは、富山県を訪れた人にアンケート調査を実施し、それらから得たデータをもとにデータの可視化を行いました。</p>
+            <p>データの可視化により、今後富山県がどのような施策をとっていくべきかを検討します。</p>
+            <p>現時点で用いたデータは、平成28年10月〜平成29年8月のデータを用いています。</p>
+            <p>ただし、富山県での交通手段に関するグラフのデータは平成29年1月〜平成29年8月のデータを用いています。</p>
+          </div>
+
+            <img src="images/d4866feb697b2c9fa546b3d9537c067b.jpg" class="img-responsive center-block toyama-image">
+      </div>
+
+      <div class="main-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="resident.html" class="index_btn">居住地</a></h2>
+              <p>居住地毎(関東・中部・関西・富山県・その他)に集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="resident_age.html" class="index_btn">居住地×年齢</a></h2>
+              <p>居住地×年齢のクロス集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="sex.html" class="index_btn">性別</a></h2>
+              <p>性別毎に集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="age.html" class="index_btn">年齢</a></h2>
+              <p>年齢毎(20代未満、20代、30代、40代、50代、60代、<br>70代、80代以上)に集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="career.html" class="index_btn">職業</a></h2>
+              <p>職業毎に集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="frequency.html" class="index_btn">国内旅行頻度</a></h2>
+              <p>国内で旅行する頻度について、集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="stay.html" class="index_btn">宿泊有無</a></h2>
+              <p>宿泊有無に関する、集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="stay_with.html" class="index_btn">同行者属性</a></h2>
+              <p>同行者属性に関する、集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="age_stay_with.html" class="index_btn">年齢×同行者属性</a></h2>
+              <p>年齢×同行者属性に関する、クロス集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="traffic_to_toyama.html" class="index_btn">交通手段</a></h2>
+              <p>富山県に来るまでに、どのような交通手段を用いたかに関する、<br>集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="last_visited.html" class="index_btn">前回訪問時期</a></h2>
+              <p>前回訪問時期に関する、集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="repeat.html" class="index_btn">リピート回数</a></h2>
+              <p>リピート回数に関する、集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="resident_repeat.html" class="index_btn">居住地×リピート回数</a></h2>
+              <p>居住地×リピート回数に関する、クロス集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="resident_frequency.html" class="index_btn">居住地×旅行頻度</a></h2>
+              <p>居住地×旅行頻度に関する、クロス集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="traffic_in_toyama.html" class="index_btn">交通手段(県内)</a></h2>
+              <p>旅行者が富山県で用いた交通手段に関する、集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="total_trans_cost.html" class="index_btn">県内交通費</a></h2>
+              <p>県内で使用した旅行費に関する、集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="stay_cost.html" class="index_btn">宿泊費</a></h2>
+              <p>旅行者が使用した宿泊費に関する、集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="gift_cost.html" class="index_btn">土産・買い物費</a></h2>
+              <p>旅行者が富山県で用いた土産・買い物費に関する、集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="eat_cost.html" class="index_btn">飲食費</a></h2>
+              <p>旅行者が富山県で用いた飲食費に関する、集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="other_cost.html" class="index_btn">その他観光費</a></h2>
+              <p>旅行者が富山県で用いたその他観光費に関する、集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="from_info.html" class="index_btn">観光情報入手先</a></h2>
+              <p>観光情報入手先に関する、集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="travel_reason.html" class="index_btn">富山県旅行理由</a></h2>
+              <p>県内旅行理由に関する、集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="satisfaction.html" class="index_btn">満足度</a></h2>
+              <p>旅行満足度に関する、集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="stay_again.html" class="index_btn">再来訪意向</a></h2>
+              <p>富山県への再来訪意向に関する、集計を行いました。</p>
+            </div>
+
+            <div class="content col-md-6 col-xs-12">
+              <h2><a href="move_order.html" class="index_btn">移動形態</a></h2>
+              <p>富山県での移動形態に関する、集計を行いました。</p>
+            </div>
+
+            <div class="clear">
+
+            </div>
+          </div>
         </div>
-
-        <div class="toyama-image">
-          <img src="images/d4866feb697b2c9fa546b3d9537c067b.jpg">
-        </div>
-    </div>
-
-    <div class="main-wrapper">
-      <div class="content">
-        <h2><a href="resident.html" class="index_btn">居住地</a></h2>
-        <p>居住地毎(関東・中部・関西・富山県・その他)に集計を行いました。</p>
       </div>
-
-      <div class="content">
-        <h2><a href="resident_age.html" class="index_btn">居住地×年齢</a></h2>
-        <p>居住地×年齢のクロス集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="sex.html" class="index_btn">性別</a></h2>
-        <p>性別毎に集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="age.html" class="index_btn">年齢</a></h2>
-        <p>年齢毎(20代未満、20代、30代、40代、50代、60代、<br>70代、80代以上)に集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="career.html" class="index_btn">職業</a></h2>
-        <p>職業毎に集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="frequency.html" class="index_btn">国内旅行頻度</a></h2>
-        <p>国内で旅行する頻度について、集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="stay.html" class="index_btn">宿泊有無</a></h2>
-        <p>宿泊有無に関する、集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="stay_with.html" class="index_btn">同行者属性</a></h2>
-        <p>同行者属性に関する、集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="age_stay_with.html" class="index_btn">年齢×同行者属性</a></h2>
-        <p>年齢×同行者属性に関する、クロス集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="traffic_to_toyama.html" class="index_btn">交通手段</a></h2>
-        <p>富山県に来るまでに、どのような交通手段を用いたかに関する、<br>集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="last_visited.html" class="index_btn">前回訪問時期</a></h2>
-        <p>前回訪問時期に関する、集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="repeat.html" class="index_btn">リピート回数</a></h2>
-        <p>リピート回数に関する、集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="resident_repeat.html" class="index_btn">居住地×リピート回数</a></h2>
-        <p>居住地×リピート回数に関する、クロス集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="resident_frequency.html" class="index_btn">居住地×旅行頻度</a></h2>
-        <p>居住地×旅行頻度に関する、クロス集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="traffic_in_toyama.html" class="index_btn">交通手段(県内)</a></h2>
-        <p>旅行者が富山県で用いた交通手段に関する、集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="total_trans_cost.html" class="index_btn">県内交通費</a></h2>
-        <p>県内で使用した旅行費に関する、集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="stay_cost.html" class="index_btn">宿泊費</a></h2>
-        <p>旅行者が使用した宿泊費に関する、集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="gift_cost.html" class="index_btn">土産・買い物費</a></h2>
-        <p>旅行者が富山県で用いた土産・買い物費に関する、集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="eat_cost.html" class="index_btn">飲食費</a></h2>
-        <p>旅行者が富山県で用いた飲食費に関する、集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="other_cost.html" class="index_btn">その他観光費</a></h2>
-        <p>旅行者が富山県で用いたその他観光費に関する、集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="from_info.html" class="index_btn">観光情報入手先</a></h2>
-        <p>観光情報入手先に関する、集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="travel_reason.html" class="index_btn">富山県旅行理由</a></h2>
-        <p>県内旅行理由に関する、集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="satisfaction.html" class="index_btn">満足度</a></h2>
-        <p>旅行満足度に関する、集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="stay_again.html" class="index_btn">再来訪意向</a></h2>
-        <p>富山県への再来訪意向に関する、集計を行いました。</p>
-      </div>
-
-      <div class="content">
-        <h2><a href="move_order.html" class="index_btn">移動形態</a></h2>
-        <p>富山県での移動形態に関する、集計を行いました。</p>
-      </div>
-
-      <div class="clear">
-
-      </div>
-
   </body>
 </html>

@@ -18,3 +18,20 @@
     float: left;
   }
 }*/
+
+header {
+  /*color: white;*/
+  width: 100%;
+  background-color: #BCF5A9;
+}
+
+.h-right{
+  margin-top: 20px; 
+}
+header a{
+  color: black;
+}
+
+img.toyama-image{
+  max-width: 80%;
+}
