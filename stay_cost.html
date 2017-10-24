@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/index2.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <script language="javascript" type="text/javascript" src="js/jquery.min.js"></script>
     <!-- <script src="http://code.jquery.com/jquery-.1.10.1.min.js"></script> -->
@@ -15,24 +16,28 @@
     <script class="include" language="javascript" type="text/javascript" src="js/plugins/jqplot.categoryAxisRenderer.js"></script>
     <script class="include" language="javascript" type="text/javascript" src="js/plugins/jqplot.pointLabels.js"></script>
     <script class="include" language="javascript" type="text/javascript" src="js/plugins/jqplot.pieRenderer.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <title>宿泊費グラフ</title>
   </head>
   <body>
     <header>
-      <div class="header-left">
-        <h2>DMO観光動態調査</h2>
-      </div>
-      <div class="header-right">
-        <ul>
-          <li><a href="index.html"><span class="fa fa-home"></span>ホーム</a></li>
-          <li><a href="member.html"><span class="fa fa-user"></span>メンバー</a></li>
-          <!-- <li><a href="#"><span class="fa fa-question"></span>お問い合わせ</a></li> -->
-        </ul>
-      </div>
-    </header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <h2>DMO観光動態調査</h2>
+          </div>
 
-
+          <div class="col-md-4 col-xs-12 col-md-offset-4 h-right">
+            <ul class="row">
+              <li class="col-md-6 col-xs-6 text-center"><a href="index.html"><span class="fa fa-home"></span>ホーム</a></li>
+              <li class="col-md-6 col-xs-6 text-center"><a href="member.html"><span class="fa fa-user"></span>メンバー</a></li>
+              <!-- <li><a href="#"><span class="fa fa-question"></span>お問い合わせ</a></li> -->
+              </ul>
+          </div>
+        </div>
+      </div>
+    </header> 
 
     <div class="main">
       <div id="stay_cost_sousu" class="gragh" style="width:900px; height:500px;"></div>

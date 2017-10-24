@@ -78,7 +78,7 @@ select{
   padding-top: 30px;
   float: left;
   width: 950px;
-  height: 1000px;
+  height: auto;
   /*background-color: red;*/
 }
 
@@ -140,7 +140,7 @@ select{
 
 .btn{
   color: white;
-  margin: 80px;
+  /*margin: 80px;*/
 }
 
 .square_btn{

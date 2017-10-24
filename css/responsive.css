@@ -35,3 +35,11 @@ header a{
 img.toyama-image{
   max-width: 80%;
 }
+
+.text-center .btn{
+  font-size: 2rem;
+}
+
+.btn-group .col-md-12{
+  margin: 40px 0px 16px;
+}
